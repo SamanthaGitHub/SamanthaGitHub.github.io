@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samantha Nixon</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> 
+</head>
+
+<body class="bg">
+    
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#github">GitHub</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <br><br>
+
+    <!-- BG VIDEO -->
+    <div id="home">
+        <video autoplay muted loop id="wave-video">
+            <source src="./media/video/waves.mp4" type="video/mp4">
+            Your browser dose not support HTML5 videos.
+        </video>
+    </div>
+
+    <!-- VIDEO TEXT -->
+    <div class="video-text">
+        <h1 class="white-text">Samantha's Portfolio</h1>
+        <strong>
+            <p class="center">
+                <!-- <q>QUOTE
+                    <br>
+                    <br>
+                </q> -->
+                <br>A former chef with an Environmental Studies BA
+                <br>home-based in Southern Oregon
+                <br>
+                <br>My name is Samantha. Welcome to my portfolio website.
+                <br>
+                <br>Enjoy!
+            </p>
+        </strong>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="row" id="about">
+        <!-- left column -->
+        <div class="column-2">
+            <img src="./media/img/cpu.jpg" alt="CPU">
+        </div>
+        <!-- right column -->
+        <div class="column-1">
+            <h1>About</h1>
+            <p>
+                I am currently in pursuit of becoming a software developer. Formerly a sous chef, I am now focused on servers for the web instead of the restaurant.
+                <br>
+                <br>I will be graduating from <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and will be trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, Python, SQL, C# and more. 
+                <br>
+                <br>I expect to graduate in January 2023 and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+            </p>
+        </div>
+    </div>
+
+    <!-- GitHub -->
+    <div class="row" id="github">
+        <!-- left column -->
+        <div class="column-1">
+            <h1>GitHub</h1>
+            <p>
+                View my coding projects here:
+                <br>
+                <ul>
+                    <li class="center"><a href="https://github.com/SamanthaGitHub/HTML-and-CSS-Projects">HTML and CSS</a></li>
+                    <li class="center"><a href="https://github.com/SamanthaGitHub/Javascript-Projects">Javascript</a></li>
+                    <li class="center"><a href="https://github.com/SamanthaGitHub/Python-Projects">Python</a></li>
+                </ul>
+            </p>
+        </div>
+        <!-- right column -->
+        <div class="column-2">
+            <a href="https://github.com/SamanthaGitHub" target="_blank"><img src="./media/img/github.png" alt="GitHub logo"></a>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="row" id="contact">
+        <!-- left column -->
+        <div class="column-2 column-tall">
+            <img src="./media/img/contact.jpg" alt="contact">
+        </div>
+        <!-- right column -->
+        <div class="column-1 column-tall">
+            <h1>Contact</h1>
+            <form action="https://formspree.io/f/mayvlgbz" method="POST">
+                <label for="">Name:</label>
+                    <input type="text" placeholder="Please enter your name here">
+                <label for="">Email:</label>
+                    <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                <label for="">Message:</label>
+                    <input type="text" name="Message" id="Message" placeholder="Please enter your message here">
+                    <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            <p class="center">&copy; Samantha Nixon &nbsp;|&nbsp; 2022</p>
+            <br>
+        </p>
+    </footer>
+</body>
+</html>

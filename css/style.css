@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+}
+
+/* GENERAL */
+body {
+    margin: 0%;
+}
+
+h1 {
+    /* font-variant: small-caps; */
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 1%;
+    color: black;
+}
+
+h1:hover {
+    filter: grayscale(5%);
+    transform: scale(1.08);
+    transition: transform 0.3s;
+}
+
+.white-text {
+    color: #fff;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 18px;
+    padding: 0 20px;
+}
+
+p:hover {
+    transition: transform 0.5s;
+    transform: scale(1.01);
+}
+
+.center {
+    text-align: center;
+}
+
+.center:hover {
+    transition: transform 1s;
+    transform: scale(1.1);
+}
+
+a {
+    color: blue;
+}
+
+q {
+    font-style: italic;
+}
+
+img {
+    filter: grayscale(65%);
+    border-radius: 10px;
+    max-width: 100%;
+    width: auto;
+    height: 340px;
+    display: block;
+    margin: auto;
+    background-color: rgb(160, 91, 0);
+}
+
+img:hover {
+    filter: grayscale(5%);
+    transition: transform 1s;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 576px) {
+    img {
+        height: 100px;
+        margin-top: 150px;
+    }
+}
+
+footer {
+    padding: 2%;
+    background-color: #f2f2f2;
+}
+
+/* NAVBAR */
+.navbar {
+    overflow: hidden;
+    background-color: rgb(61, 16, 223);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-animation: moveNav 2s;
+    animation: moveNav 2s;
+}
+
+@keyframes moveNav {
+    from {left:-100vw;}
+    to {left: 0vw;}
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    -webkit-animation: moveNavText 2.1s;
+    animation: moveNavText 2.1s;
+}
+
+@keyframes moveNavText {
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+
+@media screen and (max-width: 576px) {
+    .navbar a {
+        width: 25%;
+        font-size: 12px;
+    }
+}
+
+.navbar a:hover {
+    background-color: rgb(61, 16, 223);
+    color: rgb(250, 235, 215);
+    font-weight: bold;
+}
+
+.navbar a.active {
+    background-color: rgb(61, 16, 223);
+}
+
+/* VIDEO */
+#wave-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -1;
+    /* background-size: cover;
+    overflow: hidden; */
+}
+
+@media screen and (max-width: 576px) {
+    #space-video {
+        display: none;
+    }
+}
+
+.video-text {
+    background: rgba(61, 16, 223, 0.7);
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    -webkit-animation: moveVideoText 2.1s;
+    animation: moveVideoText 2.1s;
+}
+
+@keyframes moveVideoText {
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+
+/* TABLE */
+li {
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    font-size: 20px;
+}
+.column-1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1%;
+    height: 400px;
+    background-color: #f2f2f2;
+}
+
+.column-1:last-child {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 576px) {
+    .column-1 {
+        overflow: auto;
+    }
+}
+
+.column-2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 400px;
+    background-color: rgb(0,0,0);
+}
+
+.column-tall {
+    padding-top: 1.5%;
+    height: 500px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* CONTACT */
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type=text]:hover {
+    box-shadow: 0 0 5px #00004d inset;
+}
+
+input[type=submit] {
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type=submit]:hover {
+    background-color: #fff;
+    color: #000;
+    transform: scale(1.5);
+    transition: transform 1.5s;
+}
+
+form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
