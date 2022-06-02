@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body class="bg">
@@ -16,9 +17,10 @@
     <!-- NAVBAR -->
     <div class="navbar">
         <a class="active" href="#home">Home</a>
+        <a href="#slideshow">Slideshow</a>
         <a href="#about">About</a>
         <a href="#github">GitHub</a>
-        <a href="#contact">Contact</a>
+        <a onclick="openForm()" ondblclick="closeForm()" class="contact" href="#contact">Contact</a>
     </div>
 
     <br><br>
@@ -26,28 +28,80 @@
     <!-- BG VIDEO -->
     <div id="home">
         <video autoplay muted loop id="wave-video">
-            <source src="./media/video/waves.mp4" type="video/mp4">
+            <source src="media/video/waves.mp4" type="video/mp4">
             Your browser dose not support HTML5 videos.
         </video>
     </div>
 
     <!-- VIDEO TEXT -->
     <div class="video-text">
-        <h1 class="white-text">Samantha's Portfolio</h1>
+        <h1 class="white-text">SAMANTHA'S PORTFOLIO</h1>
         <strong>
             <p class="center">
                 <!-- <q>QUOTE
                     <br>
                     <br>
                 </q> -->
-                <br>A former chef with an Environmental Studies BA
-                <br>home-based in Southern Oregon
+                <br>A software developer and former chef 
+                <br>with an Environmental Studies BA
+                <br>based in Southern Oregon
                 <br>
-                <br>My name is Samantha. Welcome to my portfolio website.
+                <br>Welcome to my portfolio website
                 <br>
                 <br>Enjoy!
             </p>
         </strong>
+    </div>
+
+    <!-- SLIDESHOW -->
+    <div id="slideshow">
+        <div id="slideshow-bg">
+            <div id="slideshow-container">
+
+                <!-- <div class="mySlides fade">          
+                    <img class="slideshow-img" src="" alt="Picture of myself">
+                    <div class="text"></div>
+                </div> -->
+
+                <div class="mySlides fade">
+                    <!-- was Slideshow_Images -->
+                    <img class="slideshow-img" src="./media/img/slideshow/html-css-js.png" alt="HTML, CSS,and JS logos">
+                    <div class="text">I am a full-stack software developer,<br> trained in:<br> HTML, CSS, JavaScript</div>
+                </div>
+
+                <div class="mySlides fade">          
+                    <img class="slideshow-img" src="./media/img/slideshow/python.png" alt="Python">
+                    <div class="text">Python</div>
+                </div>
+
+                <div class="mySlides fade">          
+                    <img class="slideshow-img" src="./media/img/slideshow/csharp.png" alt="C#">
+                    <div class="text">C#, .NET Framework, ASP.NET, MVC</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="slideshow-img" src="./media/img/slideshow/sql.jpg" alt="SQL logo">
+                    <div class="text">back end development, databases, and SQL</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="slideshow-img" src="./media/img/slideshow/contact.jpg" alt="Contact me">
+                    <div class="text"><a class="white-text contact" onclick="openForm()">Contact me anytime!</a></div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
     </div>
 
     <!-- ABOUT -->
@@ -60,16 +114,16 @@
         <div class="column-1">
             <h1>About</h1>
             <p>
-                I am currently in pursuit of becoming a software developer. Formerly a sous chef, I am now focused on servers for the web instead of the restaurant.
+                Formerly a chef, I am now focused on servers for the web instead of the restaurant.
                 <br>
                 <br>I will be graduating from <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and will be trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, Python, SQL, C# and more. 
                 <br>
-                <br>I expect to graduate in January 2023 and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                <br>I am projected to complete my courses by January 2023 and would love to work with you on your projects. <a onclick="openForm()" class="contact">Contact me here!</a>
             </p>
         </div>
     </div>
 
-    <!-- GitHub -->
+    <!-- GITHUB -->
     <div class="row" id="github">
         <!-- left column -->
         <div class="column-1">
@@ -86,27 +140,26 @@
         </div>
         <!-- right column -->
         <div class="column-2">
-            <a href="https://github.com/SamanthaGitHub" target="_blank"><img src="./media/img/github.png" alt="GitHub logo"></a>
+            <a href="https://github.com/SamanthaGitHub" target="_blank"><img src="./media/img/github.png" width="300px"  height="300px" alt="GitHub logo"></a>
         </div>
     </div>
 
     <!-- CONTACT -->
-    <div class="row" id="contact">
-        <!-- left column -->
-        <div class="column-2 column-tall">
-            <img src="./media/img/contact.jpg" alt="contact">
-        </div>
-        <!-- right column -->
-        <div class="column-1 column-tall">
-            <h1>Contact</h1>
-            <form action="https://formspree.io/f/mayvlgbz" method="POST">
-                <label for="">Name:</label>
-                    <input type="text" placeholder="Please enter your name here">
-                <label for="">Email:</label>
-                    <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                <label for="">Message:</label>
-                    <input type="text" name="Message" id="Message" placeholder="Please enter your message here">
-                    <input type="submit" value="SUBMIT">
+    <div id="contact">
+        <button onclick="openForm()" class="pop-up-button">CONTACT</button>
+        <div class="form-popup" id="myForm">
+            <form action="https://formspree.io/f/mayvlgbz" method="POST" class="form-container">
+                <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="Name...">
+                <label for="phone">Phone</label>
+                    <input type="text" name="phone" placeholder="Phone number...">
+                <label for="email">Email</label>
+                    <input type="text" name="email" placeholder="Email...">
+                <label for="message">Message</label>
+                    <input type="text" name="message" placeholder="Message...">
+
+                <button type="submit" class="btn">SUBMIT</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
             </form>
         </div>
     </div>
