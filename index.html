@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samantha Nixon</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/media_queries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
     <script src="js/script.js" defer></script>
 </head>
 
@@ -27,10 +29,12 @@
 
     <!-- BG VIDEO -->
     <div id="home">
-        <video autoplay muted loop id="wave-video">
+
+        <!-- <video autoplay muted loop id="wave-video">
             <source src="media/video/waves.mp4" type="video/mp4">
             Your browser dose not support HTML5 videos.
-        </video>
+        </video> -->
+
     </div>
 
     <!-- VIDEO TEXT -->
@@ -38,10 +42,6 @@
         <h1 class="white-text">SAMANTHA'S PORTFOLIO</h1>
         <strong>
             <p class="center">
-                <!-- <q>QUOTE
-                    <br>
-                    <br>
-                </q> -->
                 <br>A software developer and former chef 
                 <br>with an Environmental Studies BA
                 <br>based in Southern Oregon
@@ -86,7 +86,7 @@
 
                 <div class="mySlides fade">
                     <img class="slideshow-img" src="./media/img/slideshow/contact.jpg" alt="Contact me">
-                    <div class="text"><a class="white-text contact" onclick="openForm()">Contact me anytime!</a></div>
+                    <div class="text"><a class="white-text contact" onclick="openForm()">CONTACT ME</a></div>
                 </div>
 
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -108,7 +108,7 @@
     <div class="row" id="about">
         <!-- left column -->
         <div class="column-2">
-            <img src="./media/img/cpu.jpg" alt="CPU">
+            <img src="./media/img/keyboard.jpg" alt="Keyboard">
         </div>
         <!-- right column -->
         <div class="column-1">
@@ -124,9 +124,9 @@
     </div>
 
     <!-- GITHUB -->
-    <div class="row" id="github">
+    <div class="row">
         <!-- left column -->
-        <div class="column-1">
+        <div class="column-1 github">
             <h1>GitHub</h1>
             <p>
                 View my coding projects here:
@@ -139,8 +139,8 @@
             </p>
         </div>
         <!-- right column -->
-        <div class="column-2">
-            <a href="https://github.com/SamanthaGitHub" target="_blank"><img src="./media/img/github.png" width="300px"  height="300px" alt="GitHub logo"></a>
+        <div class="column-2 github">
+            <a href="https://github.com/SamanthaGitHub" target="_blank"><img src="./media/img/github.png" alt="GitHub logo"></a>
         </div>
     </div>
 
