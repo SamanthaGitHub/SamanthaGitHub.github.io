@@ -4,6 +4,10 @@
         font-size: 3.2vw;
     }
 
+    .column-1>h1 {
+        font-size: 5vw;
+    }
+
     li {
         font-size: 3.5vw;
     }
@@ -12,6 +16,9 @@
 @media screen and (min-width: 528px) and (max-width: 660px) {
     p {
         font-size: 2.9vw;
+    }
+    .column-1>h1 {
+        font-size: 4.7vw;
     }
     li {
         font-size: 3.1vw;
@@ -22,6 +29,9 @@
     p {
         font-size: 2.6vw;
     }
+    .column-1>h1 {
+        font-size: 4.3vw;
+    }
     li {
         font-size: 2.8vw;
     }
@@ -29,7 +39,10 @@
 
 @media screen and (min-width: 800px) and (max-width: 924px) {
     p {
-        font-size: 2.45vw;
+        font-size: 2.4vw;
+    }
+    .column-1>h1 {
+        font-size: 3.7vw;
     }
     li {
         font-size: 2.6vw;
@@ -40,6 +53,9 @@
     p {
         font-size: 2.22vw;
     }
+    .column-1>h1 {
+        font-size: 3vw;
+    }
     li {
         font-size: 2.4vw;
     }
@@ -47,7 +63,10 @@
 
 @media screen and (min-width: 1051px) and (max-width: 1310px) {
     p {
-        font-size: 1.8vw;
+        font-size: 1.7vw;
+    }
+    .column-1>h1 {
+        font-size: 2.5vw;
     }
     li {
         font-size: 2vw;
@@ -60,6 +79,7 @@
     }
     li {
         font-size: 1.9vw;
+        padding: 0.5vw;
     }
 }
 
@@ -69,6 +89,7 @@
     }
     li {
         font-size: 1.4vw;
+        padding: 0.5vw;
     }
 }
 
@@ -78,6 +99,7 @@
     }
     li {
         font-size: 1.2vw;
+        padding: 0.2vw;
     }
 }
 

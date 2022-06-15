@@ -3,9 +3,9 @@
     bottom: 1.75vw;
     right: 1.75vw;
     width: 25vw;
-    background-color: rgb(61, 16, 223);
+    background-color: rgb(39, 9, 150);
     color: white;
-    border: solid rgb(61, 16, 223);
+    border: solid rgb(255, 255, 255);
     cursor: pointer;
     -webkit-animation: movePopup 5s;
     animation: movePopup 5s;
