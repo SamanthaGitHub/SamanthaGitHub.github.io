@@ -33,6 +33,7 @@ h1:hover {
 }
 
 .white-text {
+    font-size: 4vw;
     color: #fff;
     padding-top: 10vh
 }
@@ -96,6 +97,7 @@ footer {
 }
 
 .navbar a {
+    font-variant: small-caps;
     float: left;
     display: block;
     color: #fff;
@@ -116,8 +118,8 @@ footer {
 
 .navbar a:hover {
     background-color: rgb(61, 16, 223);
-    color: rgb(250, 235, 215);
-    font-weight: bold;
+    color: rgb(177, 177, 177);
+    /* font-weight: bold; */
     cursor: pointer;
     transition: 0.1s ease-in;
 }
