@@ -11,6 +11,16 @@
     li {
         font-size: 3.5vw;
     }
+
+
+
+    .pop-up-button {
+        width: 50vw;
+        font-size: 8vw;
+    }
+    .navbar a {
+        font-size: 4vw;
+    }
 }
 
 @media screen and (min-width: 528px) and (max-width: 660px) {
