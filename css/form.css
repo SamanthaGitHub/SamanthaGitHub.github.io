@@ -1,12 +1,8 @@
 .contact-button {
-    position: fixed;
-    bottom: 1.75vw;
-    margin-bottom: 30px;
-    right: 1.75vw;
-    width: 25vw;
-    height: 25vw;
+    display: inline;
+    position: relative;
     background-color: purple;
-    color: white;
+    border: 0.5px solid white;
     border: solid rgb(255, 255, 255);
     cursor: pointer;
     -webkit-animation: movePopup 5s;

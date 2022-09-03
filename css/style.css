@@ -6,7 +6,7 @@ html {
 body {
     margin: 0%;
     opacity: 1;
-    transition: 3s opacity;
+    transition: 1s opacity;
     letter-spacing: .2vw;
     font-family: sans-serif;
     font-size: 1.5vw;
@@ -36,6 +36,10 @@ h1:hover {
     font-size: 4vw;
     color: #fff;
     padding-top: 10vh
+}
+
+#name {
+    margin: 0px;
 }
 
 p {
@@ -80,6 +84,8 @@ footer {
 
 /* NAVBAR */
 #navbar {
+    margin: auto;
+    top: 0;
     font-family: sans-serif;
     overflow: hidden;
     background-color: rgb(199, 199, 199);
@@ -96,19 +102,31 @@ footer {
     to {left: 0vw;}
 }
 
-#navbar a {
-    font-variant: small-caps;
+/* .center-nav {
+    margin: auto;
+} */
+
+#navbar>a {
     display: inline;
     color: #fff;
     padding: 1vw 1vw;
     text-decoration: none;
+    font-variant: small-caps;
     font-family: sans-serif;
-    font-size: 1.5vw;
+    font-size: 2.5vw;
     text-align: center;
     position: relative;
-    -webkit-animation: moveNavText 2.1s;
-    animation: moveNavText 2.1s;
+    -webkit-animation: moveNavText 1.1s;
+    animation: moveNavText 1.1s;
 }
+
+/* .topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+} */
+  
 
 @keyframes moveNavText {
     from {top: -100vw;}
