@@ -1,12 +1,14 @@
-.contact-button {
+.pop-up-button {
+    margin: auto;
     display: inline;
     position: relative;
     background-color: purple;
     border: 0.5px solid white;
     border: solid rgb(255, 255, 255);
     cursor: pointer;
-    -webkit-animation: movePopup 5s;
-    animation: movePopup 5s;
+    -webkit-animation: movePopup 3s;
+    animation: movePopup 3s;
+    margin-bottom: 0;
 }
 
 @keyframes movePopup {
@@ -42,7 +44,7 @@
     font-size: 1vw;
 }
 
-button {
+/* button {
     font-family: 'Quicksand', sans-serif;
     letter-spacing: 0.3vw;
     font-size: 1.5vw;
@@ -51,7 +53,7 @@ button {
     cursor: pointer;
     width: 100%;
     height: auto;
-}
+} */
 
 button:hover, .form-container .btn:hover {
     color: white;

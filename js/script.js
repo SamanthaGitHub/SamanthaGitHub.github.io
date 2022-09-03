@@ -7,7 +7,7 @@ function scrollFunction() {
     document.getElementById("navbar").style.padding = "0px 10px 20px 10px";
     document.getElementById("name").style.padding = "10px";
 } else {
-    document.getElementById("navbar").style.padding = "60px 10px";
+    document.getElementById("navbar").style.padding = "70px 10px";
   }
 } 
 

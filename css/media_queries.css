@@ -5,9 +5,14 @@
         font-size: 3.5vw;
     }
 
-    #navbar>h1 {
-        font-size: 8vw;
+    #navbar {
+        display: inline-block;
     }
+
+    #name {
+        font-size: 8vw;
+        padding: 0;
+    } 
     p {
         font-size: 3.2vw;
     }
@@ -18,7 +23,14 @@
 
     #navbar a {
         font-size: 4vw;
-        float: none;
+        color: black;
+        
+    }
+
+    .pop-up-button{
+        background: white;
+        color: black;
+        border: 1px solid white;
     }
 }
 

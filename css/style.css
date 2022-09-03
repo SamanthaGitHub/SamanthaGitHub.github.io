@@ -85,13 +85,14 @@ footer {
 /* NAVBAR */
 #navbar {
     margin: auto;
-    top: 0;
     font-family: sans-serif;
     overflow: hidden;
     background-color: rgb(199, 199, 199);
     position: fixed;
     padding: 60px 10px;
     width: 100%;
+    display: flex;
+    justify-content: center;
     z-index: 1;
     -webkit-animation: moveNav 2s;
     animation: moveNav 2s;
@@ -102,11 +103,8 @@ footer {
     to {left: 0vw;}
 }
 
-/* .center-nav {
-    margin: auto;
-} */
-
 #navbar>a {
+    top: 50%;
     display: inline;
     color: #fff;
     padding: 1vw 1vw;
@@ -116,6 +114,7 @@ footer {
     font-size: 2.5vw;
     text-align: center;
     position: relative;
+    
     -webkit-animation: moveNavText 1.1s;
     animation: moveNavText 1.1s;
 }
@@ -236,7 +235,6 @@ li {
     color: #fff;
     width: 100%;
     height: 100vh;
-    padding-top: 2vh;
     position: relative;
     -webkit-animation: moveVideoText 2.1s;
     animation: moveVideoText 2.1s;
