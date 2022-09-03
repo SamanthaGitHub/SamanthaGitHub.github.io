@@ -248,8 +248,8 @@ li {
 
 /* SLIDESHOW */
 #slideshow-bg {
-    background: rgb(199, 199, 199);
-    padding: 50px;
+    background: black;
+    padding: 50px; 
 }
 
 .mySlides {
@@ -257,8 +257,9 @@ li {
 }
 
 #slideshow-container {
-    width: 39.5vw;
+    width: auto;
     height: auto;
+    max-height: 500px;
     padding-top: 4%;
     position: relative;
     margin: auto;
@@ -271,6 +272,7 @@ li {
 .slideshow-img {
     vertical-align: middle;
     height: auto;
+    max-height: 100%;
     box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, 0.75);
 }
 

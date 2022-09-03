@@ -13,7 +13,6 @@ function scrollFunction() {
 
 
 // Modal
-
 function openForm() {
     document.getElementById("myForm").style.display = "block";
 }
