@@ -52,9 +52,9 @@ p {
 }
 
 a {
-    color: blue;
+    color: purple;
     cursor: pointer;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 img {
@@ -74,17 +74,17 @@ img:hover {
 
 footer {
     padding: 2%;
-    background-color: rgb(61, 16, 223);
+    background-color: rgb(199, 199, 199);
 }
 
 
 /* NAVBAR */
-.navbar {
+#navbar {
     font-family: sans-serif;
     overflow: hidden;
-    background-color: rgb(61, 16, 223);
+    background-color: rgb(199, 199, 199);
     position: fixed;
-    top: 0;
+    padding: 60px 10px;
     width: 100%;
     z-index: 1;
     -webkit-animation: moveNav 2s;
@@ -96,10 +96,9 @@ footer {
     to {left: 0vw;}
 }
 
-.navbar a {
+#navbar a {
     font-variant: small-caps;
-    float: left;
-    display: block;
+    display: inline;
     color: #fff;
     padding: 1vw 1vw;
     text-decoration: none;
@@ -116,16 +115,30 @@ footer {
     to {top: 0vw;}
 }
 
-.navbar a:hover {
-    background-color: rgb(61, 16, 223);
+#navbar a:hover {
+    background-color: rgb(199, 199, 199);
     color: rgb(177, 177, 177);
     /* font-weight: bold; */
     cursor: pointer;
     transition: 0.1s ease-in;
 }
 
-.navbar a.active {
-    background-color: rgb(61, 16, 223);
+#navbar a.active {
+    background-color: rgb(199, 199, 199);
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
 }
 
 
@@ -201,7 +214,7 @@ li {
 }
 
 .video-text {
-    background: rgb(61, 16, 223, 0.8);
+    background: rgb(199, 199, 199, 0.777);
     color: #fff;
     width: 100%;
     height: 100vh;
@@ -219,7 +232,7 @@ li {
 
 /* SLIDESHOW */
 #slideshow-bg {
-    background: rgb(61, 16, 223);
+    background: rgb(199, 199, 199);
     padding: 50px;
 }
 

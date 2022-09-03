@@ -1,9 +1,11 @@
-.pop-up-button {
+.contact-button {
     position: fixed;
     bottom: 1.75vw;
+    margin-bottom: 30px;
     right: 1.75vw;
     width: 25vw;
-    background-color: rgb(39, 9, 150);
+    height: 25vw;
+    background-color: purple;
     color: white;
     border: solid rgb(255, 255, 255);
     cursor: pointer;
