@@ -12,8 +12,9 @@
 
     #name {
         font-size: 8vw;
-        padding: 0;
+        
         color: white;
+        text-align: left;
     } 
 
     #navbar a {
@@ -40,7 +41,8 @@
     }
 
     .video-text {
-        height: 29vh;
+        height: 100vh;
+        background: rgb(199, 199, 199);
         position: relative;
     }
 }

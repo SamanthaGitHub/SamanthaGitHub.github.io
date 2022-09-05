@@ -53,6 +53,8 @@ p {
 
 .center {
     text-align: center;
+    padding: auto;
+    margin: auto;
 }
 
 a {
@@ -84,7 +86,10 @@ footer {
 
 
 /* NAVBAR */
-#navbar {
+
+
+/* WAS NAVBAR; STICK CONTACT BUTTON TO CORNER */
+#navtext {
     margin: auto;
     font-family: sans-serif;
     overflow: hidden;
@@ -154,7 +159,6 @@ li {
     list-style: none;
     font-size: 1.5vw;
     font-family: sans-serif;
-    padding: 1vw;
 }
 
 .column-1 {
@@ -182,6 +186,7 @@ li {
 .github {
     height: 350px;
     justify-content: center;
+    text-align: center;
 }
 
 .row:after {

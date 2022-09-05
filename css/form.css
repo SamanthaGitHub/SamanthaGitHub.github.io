@@ -1,16 +1,18 @@
 .pop-up-button {
     margin: auto;
-    display: inline;
+    display: block;
+    top: 0;
     position: relative;
+    float: right;
     background-color: purple;
     border: 0.5px solid white;
-    border: solid rgb(255, 255, 255);
     cursor: pointer;
     -webkit-animation: movePopup 3s;
     animation: movePopup 3s;
     margin-bottom: 0;
 }
 
+/* CHANGE TO BE BIGGER, CENTER, FADE BG */
 @keyframes movePopup {
     from {right: -40vw;}
     to {right: 1.75vw;}
