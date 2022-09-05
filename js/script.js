@@ -4,10 +4,12 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navbar").style.padding = "0px 10px 20px 10px";
-    document.getElementById("name").style.padding = "10px";
+    document.getElementById("nav-links").style.padding = "7px";
+    document.getElementById("name").style.padding = "0px";
+    // document.getElementById("name").style.font-size = "5px";
 } else {
-    document.getElementById("navbar").style.padding = "70px 10px";
+    document.getElementById("navbar").style.padding = "10px 10px";
+
   }
 } 
 

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/form.css">
     <link rel="stylesheet" href="./css/media_queries.css">
+    <link rel="stylesheet" href="./css/mobile.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./media/favicon-32x32.png">
     <link rel="manifest" href="/site.webmanifest">
@@ -20,19 +21,19 @@
 <body class="bg">
     
     <!-- NAVBAR -->
-    <div id="navbar" class="topnav-centered">
+    <div id="navbar">
         <h1 class="white-text" id="name">SAMANTHA NIXON</h1>
+        <a onclick="openForm()" ondblclick="closeForm()" class="pop-up-button">Contact</a>
         <br>
-            <a class="active" href="#home">Home</a>
+        <div id="nav-links">
+            <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#github">GitHub</a>
-            <a onclick="openForm()" ondblclick="closeForm()" class="pop-up-button">Contact</a>
-            <br>
-            
 
+        </div>
     </div>
         <!-- CONTACT -->
-<div >
+    <div >
    
         <div class="form-popup" id="myForm">
             <form action="https://formspree.io/f/mayvlgbz" method="POST" class="form-container">
@@ -49,13 +50,8 @@
                 <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
             </form>
         
-</div>
-
-
-
     </div>
 
-    <br><br>
 
     <!-- BG VIDEO -->
     <div id="home">
@@ -70,101 +66,93 @@
     <!-- VIDEO TEXT -->
     <div class="video-text"></div>
 
-    
+    <div id="wrapper">
+        <!-- ABOUT -->
+        <div class="row" id="about">
+            <!-- left column -->
+            <div class="column-2">
 
-    <!-- ABOUT -->
-    <div class="row" id="about">
-        <!-- left column -->
+                <!-- SLIDESHOW -->
+                <div id="slideshow">
+                    <div id="slideshow-bg">
+                        <div id="slideshow-container">
 
-<!-- SLIDESHOW BELOW -->
+                            <div class="mySlides fade">
+                                <img class="slideshow-img" src="./media/img/slideshow/javascript-logo.png" alt="HTML, CSS,and JS logos">
+                                <div class="text">I am a full-stack software developer,<br> trained in:<br> HTML, CSS, JavaScript</div>
+                            </div>
 
-<!-- THIS NEEDS TO BE FIXED -->
-        
+                            <div class="mySlides fade">          
+                                <img class="slideshow-img" src="./media/img/slideshow/images.jpeg" alt="Python">
+                                <div class="text">Python</div>
+                            </div>
 
-        <div class="column-2">
+                            
 
-            <!-- SLIDESHOW -->
-            <div id="slideshow">
-                <div id="slideshow-bg">
-                    <div id="slideshow-container">
+                            <div class="mySlides fade">
+                                <img class="slideshow-img" src="./media/img/slideshow/sql.jpg" alt="SQL logo">
+                                <div class="text">back end development, databases, and SQL</div>
+                            </div>
 
-                        <div class="mySlides fade">
-                            <img class="slideshow-img" src="./media/img/slideshow/javascript-logo.png" alt="HTML, CSS,and JS logos">
-                            <div class="text">I am a full-stack software developer,<br> trained in:<br> HTML, CSS, JavaScript</div>
+                            <!-- <div class="mySlides fade">          
+                                <img class="slideshow-img" src="./media/img/slideshow/csharp.png" alt="C#">
+                                <div class="text">C#, .NET Framework, ASP.NET, MVC</div>
+                            </div> -->
+
+                            <!-- <div class="mySlides fade">
+                                <img class="slideshow-img" src="./media/img/slideshow/contact.jpg" alt="Contact me">
+                                <div class="text"><a class="white-text contact" onclick="openForm()">CONTACT ME</a></div>
+                            </div> -->
+
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
                         </div>
-
-                        <div class="mySlides fade">          
-                            <img class="slideshow-img" src="./media/img/slideshow/images.jpeg" alt="Python">
-                            <div class="text">Python</div>
+                        <br>
+                        <div style="text-align: center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <!-- <span class="dot" onclick="currentSlide(4)"></span> -->
+                            <!-- <span class="dot" onclick="currentSlide(5)"></span> -->
                         </div>
-
-                        
-
-                        <div class="mySlides fade">
-                            <img class="slideshow-img" src="./media/img/slideshow/sql.jpg" alt="SQL logo">
-                            <div class="text">back end development, databases, and SQL</div>
-                        </div>
-
-                        <!-- <div class="mySlides fade">          
-                            <img class="slideshow-img" src="./media/img/slideshow/csharp.png" alt="C#">
-                            <div class="text">C#, .NET Framework, ASP.NET, MVC</div>
-                        </div> -->
-
-                        <!-- <div class="mySlides fade">
-                            <img class="slideshow-img" src="./media/img/slideshow/contact.jpg" alt="Contact me">
-                            <div class="text"><a class="white-text contact" onclick="openForm()">CONTACT ME</a></div>
-                        </div> -->
-
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                    </div>
-                    <br>
-                    <div style="text-align: center">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                        <!-- <span class="dot" onclick="currentSlide(4)"></span> -->
-                        <!-- <span class="dot" onclick="currentSlide(5)"></span> -->
                     </div>
                 </div>
             </div>
 
-            
+
+            <!-- right column -->
+            <div class="column-1">
+                <h1>About</h1>
+                <p>
+                    Formerly a sous chef, I am now focused on servers for the web instead of the restaurant.
+                    <br>
+                    <br>I will be graduating from <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and will be trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, Python, SQL, C# and more. 
+                    <br>
+                    <br>I am projected to complete my courses by January 2023 and would love to work with you on your projects. <a onclick="openForm()" class="contact">Contact me here!</a>
+                </p>
+            </div>
         </div>
 
 
-
-        <!-- right column -->
-        <div class="column-1">
-            <h1>About</h1>
-            <p>
-                Formerly a sous chef, I am now focused on servers for the web instead of the restaurant.
-                <br>
-                <br>I will be graduating from <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and will be trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, Python, SQL, C# and more. 
-                <br>
-                <br>I am projected to complete my courses by January 2023 and would love to work with you on your projects. <a onclick="openForm()" class="contact">Contact me here!</a>
-            </p>
-        </div>
-    </div>
-
-    <!-- GITHUB -->
-    <div class="row" id="github">
-        <!-- left column -->
-        <div class="column-1 github">
-            <h1>GitHub</h1>
-            <p>
-                <br>
-                <ul>
-                    <li class="center"><a href="https://github.com/SamanthaGitHub/HTML-and-CSS-Projects">HTML and CSS</a></li>
-                    <li class="center"><a href="https://github.com/SamanthaGitHub/Javascript-Projects">Javascript</a></li>
-                    <li class="center"><a href="https://github.com/SamanthaGitHub/Python-Projects">Python</a></li>
-                </ul>
-            </p>
-        </div>
-        <!-- right column -->
-        <div class="column-2 github">
-            <a href="https://github.com/SamanthaGitHub" target="_blank"><img src="./media/img/github.png" alt="GitHub logo"></a>
+        <!-- GITHUB -->
+        <div class="row" id="github">
+            <!-- left column -->
+            <div class="column-1 github">
+                <h1>GitHub</h1>
+                <p>
+                    <br>
+                    <ul>
+                        <li class="center"><a href="https://github.com/SamanthaGitHub/HTML-and-CSS-Projects">HTML and CSS</a></li>
+                        <li class="center"><a href="https://github.com/SamanthaGitHub/Javascript-Projects">Javascript</a></li>
+                        <li class="center"><a href="https://github.com/SamanthaGitHub/Python-Projects">Python</a></li>
+                    </ul>
+                </p>
+            </div>
+            <!-- right column -->
+            <div class="column-2 github">
+                <a href="https://github.com/SamanthaGitHub" target="_blank"><img src="./media/img/github.png" alt="GitHub logo"></a>
+            </div>
         </div>
     </div>
 
@@ -172,7 +160,7 @@
     <!-- FOOTER -->
     <footer>
         <p>
-            <p class="center">&copy;&nbsp;&nbsp; 2022</p>
+            <p class="center">&copy; &nbsp;&nbsp; 2022</p>
             <br>
         </p>
     </footer>

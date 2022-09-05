@@ -1,39 +1,4 @@
 /* MEDIA QUERY */
-
-@media screen and (max-width: 527px) {
-    li {
-        font-size: 3.5vw;
-    }
-
-    #navbar {
-        display: inline-block;
-    }
-
-    #name {
-        font-size: 8vw;
-        padding: 0;
-    } 
-    p {
-        font-size: 3.2vw;
-    }
-
-    .column-1>h1 {
-        font-size: 6vw;
-    }
-
-    #navbar a {
-        font-size: 4vw;
-        color: black;
-        
-    }
-
-    .pop-up-button{
-        background: white;
-        color: black;
-        border: 1px solid white;
-    }
-}
-
 @media screen and (min-width: 528px) and (max-width: 660px) {
     p {
         font-size: 2.9vw;
@@ -53,6 +18,7 @@
     .column-1>h1 {
         font-size: 4.3vw;
     }
+
     li {
         font-size: 2.8vw;
     }
@@ -124,7 +90,8 @@
     }
 }
 
-/* MEDIA QUERY | NAVBAR */
+
+/*MEDIA QUERY | NAVBAR*/
 @media screen and (max-width: 1080px) {
     .Navbar a{
         width: 20%; /* This sets each navbar link to 1/5 of the navbar */
@@ -134,9 +101,6 @@
 
 /* Media rules to enlarge the font of the white text for smaller screens */
 @media screen and (max-width: 1080px) {
-    .quote{
-        font-size: 3.5vw;
-    }
 
     .white-text {
         font-size: 4.5vw;
