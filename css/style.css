@@ -40,6 +40,8 @@ h1:hover {
 #name {
     margin: 0px;
     padding: 0px;
+    display:inline-flex;
+    flex: auto;
 }
 
 p {
@@ -86,27 +88,30 @@ footer {
 
 
 /* NAVBAR */
-
+.nav-text {
+    justify-content: center;
+    text-align: center;
+}
 
 /* WAS NAVBAR; STICK CONTACT BUTTON TO CORNER */
-#navtext {
+#navbar {
     margin: auto;
     font-family: sans-serif;
     overflow: hidden;
     background-color: rgb(199, 199, 199);
     position: fixed;
-    padding: 80px 10px;
+    padding: 10px 10px;
     width: 100%;
     text-align: center;
     z-index: 1;
-    -webkit-animation: moveNav 1s;
-    animation: moveNav 1s;
+    /* -webkit-animation: moveNav 1s;
+    animation: moveNav 1s; */
 }
 
-@keyframes moveNav {
+/* @keyframes moveNav {
     from {left:-100vw;}
     to {left: 0vw;}
-}
+} */
 
 #navbar a {
     top: 50%;
@@ -119,8 +124,8 @@ footer {
     font-size: 2.4vw;
     text-align: center;
     position: relative;
-    -webkit-animation: moveNavText 1s;
-    animation: moveNavText 1s;
+    /* -webkit-animation: moveNavText 1s;
+    animation: moveNavText 1s; */
 }
 
 #navbar a:hover {
@@ -179,8 +184,15 @@ li {
     background-color: rgb(0,0,0);
 }
 
+#wrapper {
+    position: relative;
+}
+
 #about {
     position: relative;
+    margin-top: 30vh;
+    /* FIX */
+    scroll-margin: 12vh;
 }
 
 .github {

@@ -8,11 +8,11 @@
     #navbar {
         display: inline-block;
         text-align: center;
+        padding: 50px 10px;
     }
 
     #name {
         font-size: 8vw;
-        
         color: white;
         text-align: left;
     } 
@@ -36,7 +36,6 @@
 
     .pop-up-button{
         background: purple;
-
         border: 1px solid white;
     }
 

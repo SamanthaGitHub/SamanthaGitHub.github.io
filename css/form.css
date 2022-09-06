@@ -1,19 +1,20 @@
 .pop-up-button {
     margin: auto;
-    display: block;
+    display: inline-flex;
+    flex: right;
     top: 0;
     position: relative;
     float: right;
     background-color: purple;
     border: 0.5px solid white;
     cursor: pointer;
-    -webkit-animation: movePopup 3s;
-    animation: movePopup 3s;
-    margin-bottom: 0;
+    /* -webkit-animation: movePopup 2s;
+    animation: movePopup 2s;
+    margin-bottom: 0; */
 }
 
 /* CHANGE TO BE BIGGER, CENTER, FADE BG */
-@keyframes movePopup {
+/* @keyframes movePopup {
     from {right: -40vw;}
     to {right: 1.75vw;}
 }
@@ -21,7 +22,7 @@
 @-webkit-keyframes movePopup {
     from {right: -40vw;} 
     to {right: 1.75vw;}
-}
+} */
 
 .form-popup {
     z-index: 8;

@@ -11,10 +11,7 @@
     <link rel="stylesheet" href="./css/mobile.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./media/favicon-32x32.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+    <link rel="manifest" href="/site.webmanifest"> 
     <script src="js/script.js" defer></script>
 </head>
 
@@ -22,20 +19,8 @@
     
     <!-- NAVBAR -->
     <div id="navbar">
+        <!-- Contact Button -->
         <a onclick="openForm()" ondblclick="closeForm()" class="pop-up-button">Contact</a>
-        <div class="nav-text">
-            <h1 class="white-text" id="name">SAMANTHA NIXON</h1>
-        <br>
-            <div id="nav-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#github">GitHub</a>
-            </div>
-        </div>
-    </div>
-        <!-- CONTACT -->
-    <div >
-   
         <div class="form-popup" id="myForm">
             <form action="https://formspree.io/f/mayvlgbz" method="POST" class="form-container">
                 <label for="name">Name</label>
@@ -50,10 +35,20 @@
                 <button type="submit" class="btn">SUBMIT</button>
                 <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
             </form>
-        
+        </div>
+
+        <div class="nav-text">
+            <!-- Name -->
+            <h1 class="white-text" id="name">SAMANTHA NIXON</h1>
+            <br>
+            <div id="nav-links">
+                <!-- Navigation -->
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#github">GitHub</a>
+            </div>
+        </div>
     </div>
-
-
     <!-- BG VIDEO -->
     <div id="home">
 
