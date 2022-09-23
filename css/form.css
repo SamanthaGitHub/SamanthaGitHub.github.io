@@ -1,7 +1,7 @@
 .pop-up-button {
     margin: auto;
     display: inline-flex;
-    flex: right;
+    flex-direction: row;
     top: 0;
     position: relative;
     float: right;

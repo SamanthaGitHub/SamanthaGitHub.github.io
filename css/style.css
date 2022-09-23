@@ -41,7 +41,9 @@ h1:hover {
     margin: 0px;
     padding: 0px;
     display:inline-flex;
-    flex: auto;
+    flex-direction: row;
+    float: none;
+    
 }
 
 p {
@@ -91,27 +93,29 @@ footer {
 .nav-text {
     justify-content: center;
     text-align: center;
+    -webkit-animation: moveNav 1s;
+    animation: moveNav 1s;
 }
 
 /* WAS NAVBAR; STICK CONTACT BUTTON TO CORNER */
 #navbar {
-    margin: auto;
+    top: 0;
     font-family: sans-serif;
     overflow: hidden;
     background-color: rgb(199, 199, 199);
     position: fixed;
     padding: 10px 10px;
+    height: 30vh;
     width: 100%;
     text-align: center;
     z-index: 1;
-    /* -webkit-animation: moveNav 1s;
-    animation: moveNav 1s; */
+   
 }
 
-/* @keyframes moveNav {
+@keyframes moveNav {
     from {left:-100vw;}
     to {left: 0vw;}
-} */
+}
 
 #navbar a {
     top: 50%;
@@ -124,8 +128,8 @@ footer {
     font-size: 2.4vw;
     text-align: center;
     position: relative;
-    /* -webkit-animation: moveNavText 1s;
-    animation: moveNavText 1s; */
+    -webkit-animation: moveNav 1s;
+    animation: moveNav 1s;
 }
 
 #navbar a:hover {
@@ -235,6 +239,7 @@ li {
     position: relative;
     top: 0;
 }
+/* <div class="video-text"></div> */
 
 
 
