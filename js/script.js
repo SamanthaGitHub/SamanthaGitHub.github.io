@@ -1,5 +1,3 @@
-
-// Modal
 function openForm() {
     document.getElementById("myForm").style.display = "block";
 }
@@ -39,7 +37,3 @@ document.addEventListener("click", function(event) {
         closeForm()
     }
 }, false)
-
-
-
-console.log("__mifflin")
