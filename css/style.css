@@ -9,7 +9,6 @@ body {
     transition: 3s opacity;
     letter-spacing: .2vw;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5vw;
     overflow-x: hidden;
     user-select: none;
 }
@@ -23,12 +22,16 @@ h1 {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 3%;
+    margin: 0;
     color: black;
-    font-size: 2.5vw;
+    font-size: 4vw;
 }
 .name {
-    font-size: 4em;
+    font-size: 4vh;
+}
+#home{
+    background: rgb(117, 202, 153);
+    padding: 0;
 }
 
 h1:hover {
@@ -71,10 +74,6 @@ a {
     text-decoration: underline;
 }
 
-/* q {
-    font-style: italic;
-} */
-
 img {
     filter: grayscale(65%);
     border-radius: 10px;
@@ -93,6 +92,8 @@ img:hover {
 footer {
     padding: 2%;
     background-color: #f2f2f2;
+    text-align: center;
+    background: rgb(107, 245, 148);
 }
 
 
@@ -100,17 +101,19 @@ footer {
 .navbar {
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
-    background-color: rgb(61, 16, 223);
+    background-color: rgb(107, 245, 148);
     position: fixed;
     top: 0;
     width: 100%;
+    padding-bottom: -10px;
+    height: auto;
     z-index: 1;
     -webkit-animation: moveNav 2s;
     animation: moveNav 2s;
 }
 
 @keyframes moveNav {
-    from {left:-100vw;}
+    from {left: -90vw;}
     to {left: 0vw;}
 }
 
@@ -118,8 +121,9 @@ footer {
     float: left;
     display: block;
     color: #fff;
-    padding: 1vw 1vw;
+    padding: 1.3vw 1vw;
     text-decoration: none;
+    font-variant: small-caps;
     font-family: 'Roboto', sans-serif;
     font-size: 1.5vw;
     text-align: center;
@@ -129,27 +133,25 @@ footer {
 }
 
 @keyframes moveNavText {
-    from {top: -100vw;}
+    from {top: 0vw;}
     to {top: 0vw;}
 }
 
 .navbar a:hover {
-    background-color: rgb(61, 16, 223);
-    color: rgb(250, 235, 215);
+    /* background-color: rgb(61, 16, 223);
+    color: rgb(250, 235, 215); */
     font-weight: bold;
     cursor: pointer;
     transition: 0s ease-in;
 }
 
 .navbar a.active {
-    background-color: rgb(61, 16, 223);
+    background-color: rgb(107, 245, 148);
 }
-
 
 /* VIDEO */
 #wave-video {
     position: fixed;
-    right: 0;
     bottom: 0;
     min-width: 100%;
     z-index: -1;
@@ -158,17 +160,19 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
-    #space-video {
+    #wave-video {
         display: none;
+        background-color: #f2f2f2;
     }
 }
 
 .video-text {
-    background: rgba(61, 16, 223, 0.7);
+    background: rgba(64, 241, 117, 0.7);
     color: #fff;
     width: 100%;
     height: 100vh;
-    padding-top: 2vh;
+    /* top: -2vw; */
+    margin: auto;
     position: relative;
     -webkit-animation: moveVideoText 2.1s;
     animation: moveVideoText 2.1s;
@@ -181,30 +185,42 @@ footer {
 
 
 /* SLIDESHOW */
+#slideshow {
+    /* max-height: 50vh; */
+    margin: 10px; 
+    max-height: 80vh;
+}
+
 #slideshow-bg {
-    background: rgb(61, 16, 223);
+    background: rgb(0, 0, 0);
+    padding: 20px 0px;
+    max-height: 70vh;
 }
 
 .mySlides {
     display: none;
+    max-height: 60vh;
 }
 
 #slideshow-container {
-    width: 39.5vw;
-    height: auto;
-    padding-top: 4%;
+    width: 50vw;
+    max-height: 60vh;
+
+    /* padding-top: 4%; */
     position: relative;
     margin: auto;
 }
 
 #slideshow-container a {
     text-decoration: none;
+    max-height: 60vh;
 }
 
 .slideshow-img {
     vertical-align: middle;
     height: auto;
-    box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 20px 20px rgba(12, 4, 77, 0.5);
+    max-height: 60vh;
 }
 
 .prev, .next {
@@ -259,7 +275,7 @@ footer {
 }
 
 .active, .dot:hover {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 
 .fade {
@@ -292,12 +308,18 @@ li {
     padding: 1vw;
 }
 
+.row {
+    background-color: rgba(107, 245, 148, 0.7);
+    height: auto;
+}
+
 .column-1 {
     float: left;
     width: 50%;
     padding: 1.6%;
     height: 500px;
     background-color: #f2f2f2;
+    
 }
 
 /* .column-1:last-child {
@@ -315,7 +337,6 @@ li {
     width: 50%;
     padding: 1.6%;
     height: 500px;
-    background-color: rgb(0, 0, 0);
 }
 
 /* .column-tall {
@@ -334,10 +355,11 @@ li {
     position: fixed;
     bottom: 1.75vw;
     right: 1.75vw;
-    width: 25vw;
-    background-color: rgb(61, 16, 223);
+    width: auto;
+    margin: 0px 10px;
+    background-color: rgba(55, 110, 33, 0.582);
     color: white;
-    border: solid rgb(61, 16, 223);
+    box-shadow: 0px 0px 3px 3px inset;
     cursor: pointer;
     -webkit-animation: movePopup 2s;
     animation: movePopup 2s;
@@ -361,28 +383,31 @@ li {
     position: fixed;
     bottom: 0.5vw;
     right: 0.5vw;
+    font-size: 3vh;
 }
 
 .form-container {
     max-width: 49vw;
     padding: 1vw;
-    background-color: white;
+    color: white;
+    background-color: rgb(0, 0, 0);
 }
 
 .form-container input[type=text] {
     width: 100%;
+ 
     padding: 0.9vw;
     margin: 0.6vw 0 0.6vw 0;
     border: none;
     background: gainsboro;
-    font-size: 1vw;
+    font-size: 2vh;
 }
 
 button {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.3vw;
-    font-size: 1.5vw;
-    font-weight: bold;
+    /* font-size: 1.5vw;
+    font-weight: bold;*/
     padding: 1.5vw;
     cursor: pointer;
     width: 100%;
@@ -391,7 +416,7 @@ button {
 
 button:hover, .form-container .btn:hover {
     color: white;
-    background-color: rgb(50, 12, 189);
+    background-color: rgb(55, 110, 33);
     transition-duration: 0.3s;
     -webkit-transition-duration: 0.3s;
     border-color: silver;
@@ -412,7 +437,7 @@ button:hover, .form-container .btn:hover {
 
 .form-container .cancel:hover {
     color: white;
-    background-color: darkred;
+    background-color: red;
     transition-duration: 0.5s;
     -webkit-transition-duration: 0.5s;
     border-color: black;
@@ -421,6 +446,13 @@ button:hover, .form-container .btn:hover {
 
 /* MEDIA QUERY */
 @media screen and (max-width: 527px) {
+    .navbar a {
+        font-size: 4vw;
+        /* padding: 10px 5px; */
+    }
+    .name {
+        font-size: 10vw;
+    }
     p {
         font-size: 3.2vw;
     }
@@ -428,47 +460,110 @@ button:hover, .form-container .btn:hover {
     li {
         font-size: 3.5vw;
     }
+    .pop-up-button {
+        background-color: rgb(55, 110, 33);
+        font-size: 4vw;
+        padding: 18px;
+        width: 50%;
+        right: 25%;
+    }
+    .column-1, .column-2 {
+        height: auto;
+        margin: auto;;
+    }
+    .row {
+        max-height: 200px;
+    }
 }
 
+
 @media screen and (min-width: 528px) and (max-width: 660px) {
+    .navbar a {
+        font-size: 3.8vw;
+    }
+    .name {
+        font-size: 5vw;
+    }
     p {
-        font-size: 2.9vw;
+        font-size: 2.5vw;
     }
     li {
         font-size: 3.1vw;
     }
+    .pop-up-button {
+        font-size: 2vw;
+        padding: 18px;
+        width: 50%;
+        right: 25%;
+    }
 }
 
 @media screen and (min-width: 661px) and (max-width: 799px) {
+    .navbar a {
+        font-size: 3.8vw;
+    }
+    .name {
+        font-size: 5vw;
+    }
     p {
-        font-size: 2.6vw;
+        font-size: 2.5vw;
     }
     li {
         font-size: 2.8vw;
     }
+    .pop-up-button {
+        font-size: 2vw;
+        padding: 18px;
+        width: 50%;
+        right: 25%;
+    }
 }
 
 @media screen and (min-width: 800px) and (max-width: 924px) {
+    .navbar a {
+        font-size: 3.8vw;
+    }
+    .name {
+        font-size: 5vw;
+    }
     p {
-        font-size: 2.45vw;
+        font-size: 2.5vw;
     }
     li {
         font-size: 2.6vw;
     }
+    .pop-up-button {
+        font-size: 2vw;
+        padding: 18px;
+        width: 50%;
+        right: 25%;
+    }
 }
 
-@media screen and (min-width: 925px) and (max-width: 1050px) {
+@media screen and (min-width: 925px) and (max-width: 1080px) {
+    .navbar a {
+        font-size: 3.4vw;
+    }
+    .name {
+        font-size: 5vw;
+    }
     p {
-        font-size: 2.22vw;
+        font-size: 2vw;
     }
     li {
         font-size: 2.4vw;
     }
+    .pop-up-button {
+        font-size: 2vw;
+        padding: 18px;
+        width: 50%;
+        right: 25%;
+    }
 }
 
-@media screen and (min-width: 1051px) and (max-width: 1310px) {
+@media screen and (min-width: 1081px) and (max-width: 1310px) {
     p {
-        font-size: 1.8vw;
+        font-size: 2vw;
     }
     li {
         font-size: 2vw;
@@ -504,25 +599,29 @@ button:hover, .form-container .btn:hover {
 
 /* MEDIA QUERY | NAVBAR */
 @media screen and (max-width: 1080px) {
-    .Navbar a{
+    .navbar a{
         width: 20%; /* This sets each navbar link to 1/5 of the navbar */
-        font-size: 2.5vw;
+
     }
+    footer {
+        padding-bottom: 50px;
+    }
+    
 }
 
 /* Media rules to enlarge the font of the white text for smaller screens */
-@media screen and (max-width: 1080px) {
+/* @media screen and (max-width: 1080px) {
     .white-text {
         font-size: 4.5vw;
     }
-}
+} */
 
 /* Media rules to increase the size of the columns for larger screens */
 @media screen and (min-width: 1725px) {
-    .Column_1 {
+    .column-1 {
         height: 550px;
     }
-    .Column_2 {
+    .column-2 {
         height: 550px;
     }
 }
