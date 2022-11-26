@@ -99,8 +99,8 @@ footer {
 
 /* NAVBAR */
  .navbar-style {
-    padding: 0;
-    margin: 0;
+    padding: auto;
+    margin: auto;
     font-family: 'Roboto', sans-serif;
     /* overflow: hidden; */
     /* position: fixed; */
@@ -118,12 +118,11 @@ footer {
     to {left: 0vw;}
 }
 
-.navbar a {
+.nav-a {
     /* float: left;
     display: block; */
     color: #000000;
-    padding: 0px 5px;
-    margin: 0;
+    padding: auto;
     text-decoration: none;
     font-variant: small-caps;
     font-family: 'Roboto', sans-serif;
@@ -135,11 +134,11 @@ footer {
 }
 
 @keyframes moveNavText {
-    from {top: 0vw;}
-    to {top: 0vw;}
+    from {left: -50vw;}
+    to {left: 0vw;}
 }
 
-.navbar a:hover {
+.nav-a:hover {
     /* background-color: rgb(61, 16, 223);
     color: rgb(250, 235, 215); */
     color:silver;
@@ -147,6 +146,9 @@ footer {
     transition: 0s ease-in;
 }
 
+.nav-a-wrapper {
+    width: auto;
+}
 
 /* Wave Video */
 #wave-video {
@@ -446,7 +448,7 @@ button:hover, .form-container .btn:hover {
 
 /* Screens */
 @media screen and (max-width: 576px) {
-    .navbar a {
+    .nav-a {
         font-size: 4vw;
         /* padding: 10px 5px; */
     }
@@ -477,7 +479,7 @@ button:hover, .form-container .btn:hover {
 
 
 @media screen and (min-width: 528px) and (max-width: 660px) {
-    .navbar a {
+    .nav-a {
         font-size: 3.8vw;
     }
     .name {
@@ -498,7 +500,7 @@ button:hover, .form-container .btn:hover {
 }
 
 @media screen and (min-width: 661px) and (max-width: 799px) {
-    .navbar a {
+    .nav-a {
         font-size: 3.8vw;
     }
     .name {
@@ -519,8 +521,8 @@ button:hover, .form-container .btn:hover {
 }
 
 @media screen and (min-width: 800px) and (max-width: 924px) {
-    .navbar a {
-        font-size: 3.3vw;
+    .nav-a {
+        font-size: 2.9vw;
     }
     .name {
         font-size: 5vw;
@@ -540,8 +542,8 @@ button:hover, .form-container .btn:hover {
 }
 
 @media screen and (min-width: 925px) and (max-width: 1080px) {
-    .navbar a {
-        font-size: 3vw;
+    .nav-a {
+        font-size: 2.6vw;
     }
     .name {
         font-size: 5vw;
