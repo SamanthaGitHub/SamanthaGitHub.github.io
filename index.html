@@ -8,27 +8,66 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
     <script src="js/script.js" defer></script>
+    
 </head>
 
 <body class="bg">
     
-    <!-- NAVBAR -->
-    <div class="navbar">
-        <a class="active" href="#home">Home</a>
-        <a href="#slideshow">Slideshow</a>
-        <a href="#about">About</a>
-        <a href="#github">GitHub</a>
-        <a onclick="openForm()" ondblclick="closeForm()" class="contact" href="#contact">Contact</a>
-    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#slideshow">Features</a>
+              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#github">GitHub</a>
+              <a onclick="openForm()" ondblclick="closeForm()" class="nav-link" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
 
-    <br><br>
 
+    <!-- <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="navbar-nav">
+              <div class="nav-item navbar-style">
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
+              </div>
+              <div class="nav-item">
+                <a class="nav-link navbar-style" aria-current="page" href="#slideshow">Slideshow</a>
+              </div>
+              <div class="nav-item">
+                <a class="nav-link" aria-current="page" href="#about">About</a>
+              </div>
+              <div class="nav-item">
+                <a class="nav-link" href="#github">GitHub</a>
+              </div>
+              <div class="nav-item">
+                <a onclick="openForm()" ondblclick="closeForm()" class="nav-link contact" href="#contact">Contact</a>
+              </div>
+            </div>
+        </div>
+        </div>
+      </nav> -->
+      
     <!-- BG VIDEO -->
     <div id="home">
         <video autoplay muted loop id="wave-video">
-            <source src="media/video/waves.mp4" type="video/mp4">
+            <!-- <source src="media/video/waves.mp4" type="video/mp4"> -->
             Your browser dose not support HTML5 videos.
         </video>
     </div>
@@ -53,35 +92,35 @@
         <div id="slideshow-bg">
             <div id="slideshow-container">
 
-                <!-- <div class="mySlides fade">          
+                <!-- <div class="mySlides sh-fade">          
                     <img class="slideshow-img" src="" alt="Picture of myself">
                     <div class="text"></div>
                 </div> -->
 
-                <div class="mySlides fade">
+                <div class="mySlides slide-fade">
                     <!-- was Slideshow_Images -->
-                    <img class="slideshow-img" src="./media/img/slideshow/html-css-js.png" alt="HTML, CSS,and JS logos">
-                    <div class="text">I am a full-stack software developer,<br> trained in:<br> HTML, CSS, JavaScript</div>
+                    <img class="slideshow-image" src="./media/img/slideshow/html-css-js.png" alt="HTML, CSS,and JS logos">
+                    <div class="slideshow-text">I am a full-stack software developer,<br> trained in:<br> HTML, CSS, JavaScript</div>
                 </div>
 
-                <div class="mySlides fade">          
-                    <img class="slideshow-img" src="./media/img/slideshow/python.png" alt="Python">
-                    <div class="text">Python</div>
+                <div class="mySlides slide-fade">          
+                    <img class="slideshow-image" src="./media/img/slideshow/python.png" alt="Python">
+                    <div class="slideshow-text">Python</div>
                 </div>
 
-                <div class="mySlides fade">          
-                    <img class="slideshow-img" src="./media/img/slideshow/csharp.png" alt="C#">
-                    <div class="text">C#, .NET Framework, ASP.NET, MVC</div>
+                <div class="mySlides slide-fade">          
+                    <img class="slideshow-image" src="./media/img/slideshow/csharp.png" alt="C#">
+                    <div class="slideshow-text">C#, .NET Framework, ASP.NET, MVC</div>
                 </div>
 
-                <div class="mySlides fade">
-                    <img class="slideshow-img" src="./media/img/slideshow/sql.jpg" alt="SQL logo">
-                    <div class="text">back end development, databases, and SQL</div>
+                <div class="mySlides slide-fade">
+                    <img class="slideshow-image" src="./media/img/slideshow/sql.jpg" alt="SQL logo">
+                    <div class="slideshow-text">back end development, databases, and SQL</div>
                 </div>
 
-                <!-- <div class="mySlides fade">
-                    <img class="slideshow-img" src="./media/img/slideshow/contact.jpg" alt="Contact me">
-                    <div class="text"><a class="white-text contact" onclick="openForm()">Contact me anytime!</a></div>
+                <!-- <div class="mySlides slide-fade">
+                    <img class="slideshow-image" src="./media/img/slideshow/contact.jpg" alt="Contact me">
+                    <div class="slideshow-text"><a class="white-text contact" onclick="openForm()">Contact me anytime!</a></div>
                 </div> -->
 
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -100,7 +139,7 @@
     </div>
 
     <!-- ABOUT -->
-    <div class="row" id="about">
+    <div class="top-row" id="about">
         <!-- left column -->
         <div class="column-2">
             <!-- PICK BETTER PHOTO -->
@@ -121,7 +160,7 @@
     </div>
 
     <!-- GITHUB -->
-    <div class="row" id="github">
+    <div class="bottom-row" id="github">
         <!-- left column -->
         <div class="column-1">
             <h1>GitHub</h1>

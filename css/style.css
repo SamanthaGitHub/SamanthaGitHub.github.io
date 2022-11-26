@@ -98,15 +98,16 @@ footer {
 
 
 /* NAVBAR */
-.navbar {
+ .navbar-style {
+    padding: 0;
+    margin: 0;
     font-family: 'Roboto', sans-serif;
-    overflow: hidden;
-    background-color: rgb(16, 37, 17);
-    position: fixed;
-    top: 0;
+    /* overflow: hidden; */
+    /* position: fixed; */
+    /* top: 0;
     width: 100%;
     padding-bottom: -10px;
-    height: auto;
+    height: auto; */
     z-index: 1;
     -webkit-animation: moveNav 2s;
     animation: moveNav 2s;
@@ -118,14 +119,15 @@ footer {
 }
 
 .navbar a {
-    float: left;
-    display: block;
-    color: #fff;
-    padding: 1.3vw 1vw;
+    /* float: left;
+    display: block; */
+    color: #000000;
+    padding: 0px 5px;
+    margin: 0;
     text-decoration: none;
     font-variant: small-caps;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5vw;
+    font-size: 2.3vw;
     text-align: center;
     position: relative;
     -webkit-animation: moveNavText 2s;
@@ -140,16 +142,13 @@ footer {
 .navbar a:hover {
     /* background-color: rgb(61, 16, 223);
     color: rgb(250, 235, 215); */
-    font-weight: bold;
+    color:silver;
     cursor: pointer;
     transition: 0s ease-in;
 }
 
-.navbar a.active {
-    background-color: rgb(16, 37, 17);
-}
 
-/* VIDEO */
+/* Wave Video */
 #wave-video {
     position: fixed;
     bottom: 0;
@@ -184,11 +183,9 @@ footer {
 }
 
 
-/* SLIDESHOW */
+/* Slideshow */
 #slideshow {
-    /* max-height: 50vh; */
     margin: 10px; 
-    max-height: 80vh;
 }
 
 #slideshow-bg {
@@ -216,11 +213,11 @@ footer {
     max-height: 60vh;
 }
 
-.slideshow-img {
+.slideshow-image {
     vertical-align: middle;
     height: auto;
     box-shadow: 0px 0px 20px 20px rgba(12, 4, 77, 0.5);
-    max-height: 60vh;
+    max-height: 50vh;
 }
 
 .prev, .next {
@@ -247,7 +244,7 @@ footer {
     color: white;
 }
 
-.text {
+.slideshow-text {
     color: white;
     padding: 1vw;
     position: absolute;
@@ -278,19 +275,19 @@ footer {
     background-color: rgb(255, 255, 255);
 }
 
-.fade {
-    animation-name: fade;
+.slide-fade {
+    animation-name: slide-fade;
     animation-duration: 1s;
-    -webkit-animation-name: fade;
+    -webkit-animation-name: slide-fade;
     -webkit-animation-duration: 1s;
 }
 
-@keyframes fade {
+@keyframes slide-fade {
     from {opacity: 0.4;}
     to {opacity: 1;}
 }
 
-@-webkit-keyframes fade {
+@-webkit-keyframes slide-fade {
     from {opacity: 0.4;}
     to {opacity: 1;}
 }
@@ -308,7 +305,7 @@ li {
     padding: 1vw;
 }
 
-.row {
+.top-row, .bottom-row {
     background-color: rgba(107, 245, 148, 0.7);
     height: auto;
 }
@@ -351,14 +348,19 @@ li {
     clear: both;
 }
 
+
+
+/* CONTACT POPUP */
 .pop-up-button {
     position: fixed;
     bottom: 1.75vw;
     right: 1.75vw;
     width: auto;
+    padding: 10px 20px;
     margin: 0px 10px;
     background-color: rgba(55, 110, 33, 0.582);
     color: white;
+    font-size: 1.5em;
     box-shadow: 0px 0px 3px 3px inset;
     cursor: pointer;
     -webkit-animation: movePopup 2s;
@@ -367,16 +369,14 @@ li {
 
 @keyframes movePopup {
     from {right: -40vw;}
-    to {right: 50vw;}
+    to {right: 1.75vw;}
 }
 
 @-webkit-keyframes movePopup {
     from {right: -40vw;} 
-    to {right: 50vw;}
+    to {right: 1.75vw;}
 }
 
-
-/* CONTACT POPUP */
 .form-popup {
     z-index: 8;
     display: none;
@@ -444,8 +444,8 @@ button:hover, .form-container .btn:hover {
 }
 
 
-/* MEDIA QUERY */
-@media screen and (max-width: 527px) {
+/* Screens */
+@media screen and (max-width: 576px) {
     .navbar a {
         font-size: 4vw;
         /* padding: 10px 5px; */
@@ -456,7 +456,6 @@ button:hover, .form-container .btn:hover {
     p {
         font-size: 3.2vw;
     }
-
     li {
         font-size: 3.5vw;
     }
@@ -465,11 +464,11 @@ button:hover, .form-container .btn:hover {
         font-size: 4vw;
         padding: 18px;
         width: 50%;
-        right: 25%;
+        left: 25%;
     }
     .column-1, .column-2 {
         height: auto;
-        margin: auto;;
+        margin: auto;
     }
     .row {
         max-height: 200px;
@@ -490,12 +489,12 @@ button:hover, .form-container .btn:hover {
     li {
         font-size: 3.1vw;
     }
-    .pop-up-button {
+    /* .pop-up-button {
         font-size: 2vw;
         padding: 18px;
         width: 50%;
         right: 25%;
-    }
+    } */
 }
 
 @media screen and (min-width: 661px) and (max-width: 799px) {
@@ -511,17 +510,17 @@ button:hover, .form-container .btn:hover {
     li {
         font-size: 2.8vw;
     }
-    .pop-up-button {
+    /* .pop-up-button {
         font-size: 2vw;
         padding: 18px;
         width: 50%;
         right: 25%;
-    }
+    } */
 }
 
 @media screen and (min-width: 800px) and (max-width: 924px) {
     .navbar a {
-        font-size: 3.8vw;
+        font-size: 3.3vw;
     }
     .name {
         font-size: 5vw;
@@ -532,17 +531,17 @@ button:hover, .form-container .btn:hover {
     li {
         font-size: 2.6vw;
     }
-    .pop-up-button {
+    /* .pop-up-button {
         font-size: 2vw;
         padding: 18px;
         width: 50%;
         right: 25%;
-    }
+    } */
 }
 
 @media screen and (min-width: 925px) and (max-width: 1080px) {
     .navbar a {
-        font-size: 3.4vw;
+        font-size: 3vw;
     }
     .name {
         font-size: 5vw;
@@ -553,13 +552,10 @@ button:hover, .form-container .btn:hover {
     li {
         font-size: 2.4vw;
     }
-    .pop-up-button {
-        font-size: 2vw;
-        padding: 18px;
-        width: 50%;
-        right: 25%;
-    }
+    
 }
+
+
 
 @media screen and (min-width: 1081px) and (max-width: 1310px) {
     p {
