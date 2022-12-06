@@ -1,3 +1,11 @@
+//Page fade in
+window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.remove('fade-out');
+});
+
+
+
+//Popup form
 function openForm() {
     document.getElementById("myForm").style.display = "block";
 }
@@ -6,6 +14,8 @@ function closeForm() {
     document.getElementById("myForm").style.display = "none";
 }
 
+
+//Slideshow
 var slideIndex = 1;
 showSlides(slideIndex);
 

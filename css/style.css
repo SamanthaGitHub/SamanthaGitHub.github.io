@@ -1,12 +1,15 @@
 html {
     scroll-behavior: smooth;
 }
+body.fade-out {
+    opacity: 0;
+}
 
 /* GENERAL */
 body {
     margin: 0%;
     opacity: 1;
-    transition: 3s opacity;
+    transition: 1s opacity;
     letter-spacing: .2vw;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
@@ -21,18 +24,18 @@ h1 {
     /* font-variant: small-caps; */
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin: 0;
     color: black;
     font-size: 4vw;
 }
 .name {
-    font-size: 4vh;
+    font-size: 4vw;
 }
-#home{
-    background: rgb(117, 202, 153);
+/* #home {
+    background-color: rgb(56, 28, 156);
     padding: 0;
-}
+} */
 
 h1:hover {
     filter: grayscale(5%);
@@ -63,16 +66,16 @@ p {
     text-align: center;
 }
 
-.center:hover {
+/* .center:hover {
     transition: transform 1s;
     transform: scale(1.1);
-}
+} */
 
-a {
+/* a {
     color: blue;
     cursor: pointer;
     text-decoration: underline;
-}
+} */
 
 img {
     filter: grayscale(65%);
@@ -90,10 +93,11 @@ img:hover {
 }
 
 footer {
-    padding: 2%;
-    background-color: #f2f2f2;
+    margin-top: 50px;
+    padding: 30px;
+    color: #f2f2f2;
     text-align: center;
-    background: rgb(107, 245, 148);
+    background: rgb(0, 0, 0);
 }
 
 
@@ -113,10 +117,10 @@ footer {
     animation: moveNav 2s;
 }
 
-@keyframes moveNav {
+/* @keyframes moveNav {
     from {left: -90vw;}
     to {left: 0vw;}
-}
+} */
 
 .nav-a {
     /* float: left;
@@ -133,10 +137,10 @@ footer {
     animation: moveNavText 2s;
 }
 
-@keyframes moveNavText {
+/* @keyframes moveNavText {
     from {left: -50vw;}
     to {left: 0vw;}
-}
+} */
 
 .nav-a:hover {
     /* background-color: rgb(61, 16, 223);
@@ -168,7 +172,7 @@ footer {
 }
 
 .video-text {
-    background: rgba(64, 241, 117, 0.7);
+    background: rgba(21, 1, 66, 0.7);
     color: #fff;
     width: 100%;
     height: 100vh;
@@ -179,10 +183,10 @@ footer {
     animation: moveVideoText 2.1s;
 }
 
-@keyframes moveVideoText {
+/* @keyframes moveVideoText {
     from {top: -100vw;}
     to {top: 0vw;}
-}
+} */
 
 
 /* Slideshow */
@@ -300,15 +304,37 @@ footer {
     box-sizing: border-box;
 }
 
-li {
+.proj {
+    font-variant: normal;
     list-style: none;
-    font-size: 1.5vw;
+    text-decoration-line: none;
+    text-align: center;
+    font-size: 3vh;                   
+                                       /* YOU FINISHED WITH THE GITHUB LI 12/5 18:53*/
+    max-height: 10vh;
     font-family: 'Roboto', sans-serif;
-    padding: 1vw;
+    padding-top: 10%;
+    margin: 10px;
+    width: 100%;
+    color:red;
+    background-color: pink;
+    border: 3px solid silver;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.proj:hover {
+    font-variant: normal;
+    list-style: none;
+    text-decoration-line: none;
+    color: blue;
+}
+
+.proj:last-child {
+    padding-bottom: 30px;
 }
 
 .top-row, .bottom-row {
-    background-color: rgba(107, 245, 148, 0.7);
+    /* background-color: rgba(107, 245, 148, 0.7); */
     height: auto;
 }
 
@@ -317,9 +343,10 @@ li {
     width: 50%;
     padding: 1.6%;
     height: 500px;
-    background-color: #f2f2f2;
+    /* background-color: #ff0000; */
     
 }
+
 
 /* .column-1:last-child {
     border-bottom: 1px solid rgb(0, 0, 0);
@@ -336,6 +363,24 @@ li {
     width: 50%;
     padding: 1.6%;
     height: 500px;
+    /* background-color: rgb(0,0,0); */
+}
+
+#github>.column-1,#github>.column-2 {
+    border-top: 3px solid white;
+    padding: 10%;
+    margin: auto;
+    margin-bottom: 30px;
+    padding-bottom: 50px;
+    background-color: black;
+    color:white;
+}
+#github {
+    color:white;
+    border-top: 4px solid white;
+}
+#about>.column-1,#about>.column-2 {
+    background-color: rgb(247, 132, 195);
 }
 
 /* .column-tall {
@@ -352,7 +397,7 @@ li {
 
 
 
-/* CONTACT POPUP */
+/* Contact popup */
 .pop-up-button {
     position: fixed;
     bottom: 1.75vw;
@@ -450,16 +495,20 @@ button:hover, .form-container .btn:hover {
 @media screen and (max-width: 576px) {
     .nav-a {
         font-size: 4vw;
+        font-variant: normal;
         /* padding: 10px 5px; */
     }
     .name {
         font-size: 10vw;
     }
+    h1 {
+        font-size: 40px;
+    }
     p {
         font-size: 3.2vw;
     }
     li {
-        font-size: 3.5vw;
+        font-size: 3.8vw;
     }
     .pop-up-button {
         background-color: rgb(55, 110, 33);
@@ -468,10 +517,10 @@ button:hover, .form-container .btn:hover {
         width: 50%;
         left: 25%;
     }
-    .column-1, .column-2 {
+    /* .column-1, .column-2 {
         height: auto;
         margin: auto;
-    }
+    } */
     .row {
         max-height: 200px;
     }
@@ -566,7 +615,7 @@ button:hover, .form-container .btn:hover {
     li {
         font-size: 2vw;
     }
-}
+}   
 
 @media screen and (min-width: 1311px) and (max-width: 1535px) {
     p {
@@ -601,9 +650,7 @@ button:hover, .form-container .btn:hover {
         width: 20%; /* This sets each navbar link to 1/5 of the navbar */
 
     }
-    footer {
-        padding-bottom: 50px;
-    }
+    
     
 }
 
