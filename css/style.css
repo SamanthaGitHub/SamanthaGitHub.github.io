@@ -30,7 +30,8 @@ h1 {
     font-size: 4vw;
 }
 .name {
-    font-size: 4vw;
+    font-weight: bold;
+    color: red;
 }
 /* #home {
     background-color: rgb(56, 28, 156);
@@ -93,11 +94,15 @@ img:hover {
 }
 
 footer {
-    margin-top: 50px;
-    padding: 30px;
-    color: #f2f2f2;
+    padding: 10vh;
+    margin-top: 10vh;
+    color: #525151;
     text-align: center;
     background: rgb(0, 0, 0);
+    font-size: 10px;
+    bottom: 0;
+    /* height: 50vh;
+    position: absolute; */
 }
 
 
@@ -172,7 +177,7 @@ footer {
 }
 
 .video-text {
-    background: rgba(21, 1, 66, 0.7);
+    background: rgba(0, 4, 255, 0.705);
     color: #fff;
     width: 100%;
     height: 100vh;
@@ -197,7 +202,7 @@ footer {
 #slideshow-bg {
     background: rgb(0, 0, 0);
     padding: 20px 0px;
-    max-height: 70vh;
+    max-height: 80vh;
 }
 
 .mySlides {
@@ -207,7 +212,7 @@ footer {
 
 #slideshow-container {
     width: 50vw;
-    max-height: 60vh;
+    max-height: 70vh;
 
     /* padding-top: 4%; */
     position: relative;
@@ -216,7 +221,6 @@ footer {
 
 #slideshow-container a {
     text-decoration: none;
-    max-height: 60vh;
 }
 
 .slideshow-image {
@@ -259,7 +263,7 @@ footer {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.1vw;
-    font-size: 1vw;
+    font-size: 10px;
     background-color: rgba(0, 0, 0, 0.75);
     font-weight: bold;
     border-radius: 0px 0px 7px 7px;
@@ -311,26 +315,24 @@ footer {
     text-align: center;
     font-size: 3vh;                   
                                        /* YOU FINISHED WITH THE GITHUB LI 12/5 18:53*/
-    max-height: 10vh;
+
     font-family: 'Roboto', sans-serif;
-    padding-top: 10%;
+    padding: 20px;
     margin: 10px;
     width: 100%;
-    color:red;
-    background-color: pink;
-    border: 3px solid silver;
-    border-radius: 5px;
+    color:white;
+    background-color: rgb(115, 113, 116);
+    box-shadow: 0px 0px 3px 3px inset;
+    border-radius: 20px;
     cursor: pointer;
 }
 .proj:hover {
     font-variant: normal;
     list-style: none;
     text-decoration-line: none;
-    color: blue;
 }
-
 .proj:last-child {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .top-row, .bottom-row {
