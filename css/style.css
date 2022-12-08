@@ -152,9 +152,9 @@ ul {
         background-color: #000000;
     }
     #wave-image {
-        display: block;
+        display: inline-block;
         position: fixed;
-        bottom: 0;
+        top: 0;
         min-width: 100%;
         z-index: -7;
     }
@@ -515,6 +515,7 @@ button:hover, .form-container .btn:hover {
         width: 50%;
         left: 25%;
     }
+    
     /* .column-1, .column-2 {
         height: auto;
         margin: auto;
