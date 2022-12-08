@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samantha Nixon</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
@@ -17,56 +14,24 @@
     <script src="js/script.js" defer></script>
 
 </head>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> -->
 <body class="fade-out">
     
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-light navbar-light">
-            <a href="navbar-brand"></a>
-          <button class="navbar-toggler"  style="width:80px; text-align: center;" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav nav-a-wrapper">
-              <a class="nav-link nav-a" href="#home">Home</a>
-              <a class="nav-link nav-a" href="#slideshow">Slideshow</a>
-              <a class="nav-link nav-a" href="#about">About</a>
-              <a class="nav-link nav-a" href="#github">GitHub</a>
-              <a onclick="openForm()" ondblclick="closeForm()" class="nav-link nav-a" href="#contact">Contact</a>
-            </div>
+    <nav id="navbar">
+        <div class="navbar-container">
+            <ul>
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#slideshow">Slideshow</a></li>
+                <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item"><a href="#github">GitHub</a></li>
+                <li class="nav-item"><a href="#contact" onclick="openForm()" ondblclick="closeForm()">Contact</a></li>
+            </ul>
         </div>
+            
     </nav>
 
 
-    <!-- <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <div class="navbar-nav">
-              <div class="nav-item navbar-style">
-                <a class="nav-link" aria-current="page" href="#home">Home</a>
-              </div>
-              <div class="nav-item">
-                <a class="nav-link navbar-style" aria-current="page" href="#slideshow">Slideshow</a>
-              </div>
-              <div class="nav-item">
-                <a class="nav-link" aria-current="page" href="#about">About</a>
-              </div>
-              <div class="nav-item">
-                <a class="nav-link" href="#github">GitHub</a>
-              </div>
-              <div class="nav-item">
-                <a onclick="openForm()" ondblclick="closeForm()" class="nav-link contact" href="#contact">Contact</a>
-              </div>
-            </div>
-        </div>
-        </div>
-      </nav> -->
-
-    <!-- BG VIDEO -->
+    <!-- Background Video -->
     <div id="home">
         <video autoplay muted loop id="wave-video">
             <!-- <source src="media/video/waves.mp4" type="video/mp4"> -->
@@ -74,18 +39,13 @@
         </video>
     </div>
 
-    <!-- VIDEO TEXT -->
+    <!-- Video Text -->
     <div class="video-text">
-        <h1 class="white-text">Full-Stack Developer</h1>
-        <strong>
-            <p class="pt-5 center name-text">
-                I am Samantha Nixon, an aspiring software developer
-                currently seeking employment.
-            </p>
-        </strong>
+        <h1 class="white-text name">Samantha Nixon</h1>
+        <h2 class="white-text">Full-Stack Software Developer</h2>
     </div>
 
-    <!-- SLIDESHOW -->
+    <!-- Slideshow -->
     <div id="slideshow">
         <div id="slideshow-bg">
             <div id="slideshow-container">
@@ -135,53 +95,47 @@
         </div>
     </div>
 
-    <!-- ABOUT -->
-    <div class="top-row" id="about">
+    <!-- About -->
+    <div id="about">
         <!-- left column -->
-        <div class="column-2">
-            <!-- PICK BETTER PHOTO -->
-            <p>do like a weather API...</p>
-            <!-- <img src="" alt="[choose_image]"> -->
+        <!-- <div>
+            
+            <img src="" alt="[choose_image]">
 
-        </div>
+        </div> -->
         <!-- right column -->
-        <div class="column-1">
-            <h1>About</h1>
+        <div>
+            <h1 class="center">About</h1>
             <p>
                 Formerly a sous chef, I am now focused on servers for the web instead of the restaurant.
                 <br>
                 <br>I will be graduating from <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and will be trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, Python, SQL, C# and more. 
                 <br>
-                <br>To get in contact with me about employment opportunities, please <a onclick="openForm()" class="contact" style="font: Courier;">[click here]</a>.
+                <br>To get in contact with me about employment opportunities, please <a onclick="openForm()" class="contact" style="font: Courier;"><b>click here</b></a>.
             </p>
         </div>
     </div>
 
-    <!-- GITHUB -->
-    <div class="bottom-row" id="github">
+    <!-- GitHub -->
+    <div id="github">
         <!-- left column -->
         <div class="column-1">
-            <h1 style="color:white">GitHub</h1>
-            <p class="center">View my coding projects here:</p>
+            <h1>GitHub</h1>
+            <p>View my coding projects here:</p>
                 <br>
-                <div class="proj-container">
-                    <!-- <div class="proj"><a href="https://github.com/SamanthaGitHub/HTML-and-CSS-Projects">HTML and CSS</a></div>
-                    <div class="proj"><a href="https://github.com/SamanthaGitHub/Javascript-Projects">Javascript</a></div>
-                    <div class="proj"><a href="https://github.com/SamanthaGitHub/Python-Projects">Python</a></div>
-                    <div class="proj"><a href="https://github.com/SamanthaGitHub/CSharp-Projects">C#</a></div> -->
-
-                    <a href="https://github.com/SamanthaGitHub/HTML-and-CSS-Projects"><li class="proj">HTML & CSS</li></a>
-                    <a href="https://github.com/SamanthaGitHub/Javascript-Projects"><li class="proj">Javascript</li></a>
-                    <a href="https://github.com/SamanthaGitHub/Python-Projects"><li class="proj">Python</li></a>
-                    <a href="https://github.com/SamanthaGitHub/CSharp-Projects"><li class="proj">C#</li></a>
-                    </div>
+                <div class="repo-container">
+                    <a href="https://github.com/SamanthaGitHub/HTML-and-CSS-Projects"><li class="repo">HTML & CSS</li></a>
+                    <a href="https://github.com/SamanthaGitHub/Javascript-Projects"><li class="repo">Javascript</li></a>
+                    <a href="https://github.com/SamanthaGitHub/Python-Projects"><li class="repo">Python</li></a>
+                    <a href="https://github.com/SamanthaGitHub/CSharp-Projects"><li class="repo">C#</li></a>
+                </div>
             
         </div>
 
         <!-- right column -->
         <div class="column-2">
             <!-- GET HIGHER RES GITHUB IMG -->
-            <a href="https://github.com/SamanthaGitHub" target="_blank"><img src="./media/img/github.png" style="border-radius: 50%; vertical-align: middle;" alt="GitHub logo"></a>
+            <a class="github-logo" href="https://github.com/SamanthaGitHub" target="_blank"><img src="./media/img/github.png" alt="GitHub logo"></a>
         </div>
     </div>
 
@@ -190,15 +144,17 @@
         <button onclick="openForm()" class="pop-up-button">CONTACT</button>
         <div class="form-popup" id="myForm">
             <form action="https://formspree.io/f/mayvlgbz" method="POST" class="form-container">
-                <label for="name">Name</label>
+                <h3>Contact Samantha by submitting the form below:</h3>
+                    <label for="name">Name</label>
                     <input type="text" name="name" placeholder="Name...">
-                <label for="phone">Phone</label>
+                    <label for="phone">Phone</label>
                     <input type="text" name="phone" placeholder="Phone number...">
-                <label for="email">Email</label>
-                    <input type="text" name="email" placeholder="Email...">
-                <label for="message">Message</label>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" placeholder="Email address...">
+                    <label for="message">Message</label>
                     <input type="text" name="message" placeholder="Message...">
 
+                
                 <button type="submit" class="btn">SUBMIT</button>
                 <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
             </form>
