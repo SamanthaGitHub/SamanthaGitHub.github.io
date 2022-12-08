@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="js/script.js" defer></script>
 
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/media/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/media/img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body class="fade-out">
     
@@ -24,7 +28,6 @@
                 <li class="nav-item"><a href="#slideshow">Slideshow</a></li>
                 <li class="nav-item"><a href="#about">About</a></li>
                 <li class="nav-item"><a href="#github">GitHub</a></li>
-                <li class="nav-item"><a href="#contact" onclick="openForm()" ondblclick="closeForm()">Contact</a></li>
             </ul>
         </div>
             
@@ -34,9 +37,10 @@
     <!-- Background Video -->
     <div id="home">
         <video autoplay muted loop id="wave-video">
-            <!-- <source src="media/video/waves.mp4" type="video/mp4"> -->
+            <source src="media/video/waves.mp4" type="video/mp4">
             Your browser dose not support HTML5 videos.
         </video>
+        <img id="wave-image" src="/media/img/w-image.jpg" alt="Image not supported.">
     </div>
 
     <!-- Video Text -->
