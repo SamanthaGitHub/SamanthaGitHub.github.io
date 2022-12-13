@@ -1,11 +1,7 @@
 html {
     scroll-behavior: smooth;
 }
-body.fade-out {
-    opacity: 0;
-}
 
-/* Utilities */
 body {
     margin: 0;
     opacity: 1;
@@ -16,10 +12,11 @@ body {
     user-select: none;
 }
 
+
+/* Utilities */
 body.fade-out {
     opacity: 0.1;
 }
-
 
 .white-text {
     color: bisque;
@@ -77,6 +74,7 @@ a{
     cursor: pointer;
 }
 
+
 /* Navbar */
 .navbar-container {
     background-color: rgba(44, 83, 255,0.5);
@@ -91,7 +89,6 @@ ul {
     padding: 1px;
     text-align: center;
 }
-
 
 .nav-item {
     padding: 0px 1vw;
@@ -148,7 +145,6 @@ ul {
 @media screen and (max-width: 576px) {
     #wave-video {
         display: none;
-        /* choose bg image */
         background-color: #000000;
     }
     #wave-image {
@@ -166,14 +162,12 @@ ul {
     color: #fff;
     width: 100%;
     height: 100vh;
-    /* top: -2vw; */
     margin: auto;
     padding: 20vh 10vw;
     position: relative;
     -webkit-animation: moveVideoText 2.1s;
     animation: moveVideoText 2.1s;
 }
-
 /* @keyframes moveVideoText {
     from {top: -100vw;}
     to {top: 0vw;}
@@ -300,8 +294,6 @@ ul {
     text-decoration-line: none;
     text-align: center;
     font-size: 20px;                   
-                                       /* YOU FINISHED WITH THE GITHUB LI 12/5 18:53*/
-
     font-family: 'Roboto', sans-serif;
     padding: 10px;
     margin: 10px;
@@ -315,7 +307,6 @@ ul {
 .repo:hover {
     color:silver;
 }
-
 
 .top-row, .bottom-row {
     /* background-color: rgba(107, 245, 148, 0.7); */
@@ -333,8 +324,6 @@ ul {
     /* background-color: #ff0000; */
     
 }
-
-
 /* .column-1:last-child {
     border-bottom: 1px solid rgb(0, 0, 0);
 }*/
@@ -394,7 +383,6 @@ ul {
 }
 
 
-
 /* Contact popup */
 .pop-up-button {
     position: fixed;
@@ -449,7 +437,6 @@ ul {
     font-size: 2vh;
 }
 
-
 button {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.3vw;
@@ -463,7 +450,7 @@ button {
 
 button:hover, .form-container .btn:hover {
     color: white;
-    background-color: rgb(39, 143, 91);
+    background-color: rgb(27, 85, 25);
     transition-duration: 0.3s;
     -webkit-transition-duration: 0.3s;
     border-color: silver;
@@ -489,7 +476,6 @@ button:hover, .form-container .btn:hover {
     border-color: silver;
 }
 
-
 /* Screens */
 @media screen and (max-width: 576px) {
     .nav-item>a {
@@ -504,10 +490,10 @@ button:hover, .form-container .btn:hover {
         font-size: 40px;
     }
     p {
-        font-size: 3.2vw;
+        font-size: 3vw;
     }
     li {
-        font-size: 3.8vw;
+        font-size: 3.5vw;
     }
     .pop-up-button {
         font-size: 4vw;
@@ -525,7 +511,6 @@ button:hover, .form-container .btn:hover {
     }
 }
 
-
 @media screen and (min-width: 528px) and (max-width: 660px) {
     .nav-a {
         font-size: 3.8vw;
@@ -534,7 +519,7 @@ button:hover, .form-container .btn:hover {
         font-size: 8vw;
     }
     p {
-        font-size: 2.5vw;
+        font-size: 2.7vw;
     }
     li {
         font-size: 3.1vw;
@@ -555,7 +540,7 @@ button:hover, .form-container .btn:hover {
         font-size: 7vw;
     }
     p {
-        font-size: 2.5vw;
+        font-size: 2.4vw;
     }
     li {
         font-size: 2.8vw;
@@ -576,7 +561,7 @@ button:hover, .form-container .btn:hover {
         font-size: 7vw;
     }
     p {
-        font-size: 2.5vw;
+        font-size: 2.2vw;
     }
     li {
         font-size: 2.6vw;
@@ -600,11 +585,9 @@ button:hover, .form-container .btn:hover {
     
 }
 
-
-
 @media screen and (min-width: 1081px) and (max-width: 1310px) {
     p {
-        font-size: 2vw;
+        font-size: 1.8vw;
     }
     li {
         font-size: 2vw;
@@ -613,7 +596,7 @@ button:hover, .form-container .btn:hover {
 
 @media screen and (min-width: 1311px) and (max-width: 1535px) {
     p {
-        font-size: 1.7vw;
+        font-size: 1.5vw;
     }
     li {
         font-size: 1.9vw;
@@ -638,11 +621,10 @@ button:hover, .form-container .btn:hover {
     }
 }
 
-/* MEDIA QUERY | NAVBAR */
+/* MEDIA QUERY | Navbar */
 @media screen and (max-width: 1080px) {
     .navbar a{
-        width: 20%; /* This sets each navbar link to 1/5 of the navbar */
-
+        width: 20%;
     }
     
     
@@ -663,10 +645,11 @@ button:hover, .form-container .btn:hover {
     .column-2 {
         height: 550px;
     }
+    .repo-container {
+        margin-bottom: 40px;
+    }
 }
 
-
-/*to remove margin-top from h1 elements for extra large screens*/
 @media screen and (min-width: 2000px) {
     h1{
         margin-top: 0;
