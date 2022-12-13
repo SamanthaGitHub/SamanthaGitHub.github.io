@@ -104,8 +104,8 @@ ul {
     font-variant: small-caps;
     font-family: 'Roboto', sans-serif;
     /* background-color: rgba(44, 83, 255, 0.15); */
-    -webkit-animation: moveNavText 2s;
-    animation: moveNavText 2s;
+    /* -webkit-animation: moveNavText 2s;
+    animation: moveNavText 2s; */
 }
 
 .nav-item>a {
@@ -287,7 +287,7 @@ ul {
 }
 
 
-/* TABLE */
+/* Table */
 * {
     box-sizing: border-box;
 }
@@ -387,7 +387,7 @@ ul {
 }
 
 
-/* Contact popup */
+/* Contact Popup */
 .pop-up-button {
     position: fixed;
     bottom: 1.75vw;
@@ -627,7 +627,7 @@ button:hover, .form-container .btn:hover {
 
 /* MEDIA QUERY | Navbar */
 @media screen and (max-width: 1080px) {
-    .navbar a{
+    .nav-item {
         width: 20%;
     }
 }
