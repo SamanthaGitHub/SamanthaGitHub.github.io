@@ -21,6 +21,7 @@ body.fade-out {
 .white-text {
     color: bisque;
     font-weight: lighter;
+    font-size: 3vw;
 }
 .name {
     font-family: Lobster;
@@ -81,7 +82,7 @@ h1 {
 
 /* Navbar */
 .navbar-container {
-    background-color: rgba(44, 83, 255,0.5);
+    background-color: rgba(44, 83, 255, 0.705);
     top: 0;
     padding: 2px;
     width: 100%;
@@ -112,8 +113,8 @@ ul {
     /* padding: auto; */
     margin: auto;
     padding: 2vw;
-    font-size: 3vw;
-    color: white;
+    font-size: 2.5vw;
+    color: bisque;
 }
 /* .nav-item>li {
     width: 5vw;
@@ -128,7 +129,7 @@ ul {
 .nav-item>a:hover {
     /* background-color: rgb(61, 16, 223);
     color: rgb(250, 235, 215); */
-    color:rgb(190, 190, 190);
+    /* color:rgb(99, 143, 91); */
     cursor: pointer;
     transition: 0s ease-in;
 }
@@ -155,7 +156,7 @@ ul {
         display: inline-block;
         position: fixed;
         top: 0;
-        min-width: 100%;
+        min-width: 100vh;
         z-index: -7;
     }
 }
@@ -180,12 +181,12 @@ ul {
 
 /* Slideshow */
 #slideshow {
-    margin: 10px; 
+    /* margin: 10px;  */
 }
 
 #slideshow-bg {
     background: rgb(0, 0, 0);
-    padding: 20px 0px;
+    padding: 40px 0px;
     max-height: 80vh;
 }
 
@@ -321,8 +322,9 @@ ul {
     float: left;
     width: 60%;
     padding: 1.6%;
-    height: 100vh;
-    background-color: black;
+    height: 100%;
+    background: black;
+    height: 50rem;
     /* padding-bottom: 0vh; */
     /* margin-bottom: 0; */
     overflow: hidden;
@@ -341,34 +343,46 @@ ul {
 
 .column-2 {
     float: right;
-    margin: auto;
     width: 40%;
+    height: 50rem;
+    overflow:hidden;
     /* padding: 1.6%; */
-    height:100vh;
     /* padding: 0; */
     /* margin: 0; */
-    /* background-color: rgb(0,0,0); */
+    background: rgb(0,0,0);
 }
 
 .column-1, .column-2 {
     border-top: 3px solid white;
     padding: 10%;
     margin: auto;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
     background-color: black;
     color:white;
-    overflow: hidden;
 }
 #github {
     color:white;
     border-top: 4px solid white;
+    background: #000000;
 }
+/* .black-block {
+    color: #000000;
+    height: 100vh;
+} */
 #about {
     padding: 5vw;
     margin: 0;
     background-color: rgba(255,255,255, 0.8);
     height: auto;
+}
+#about-text {
+    max-width: 1000px;
+    margin: auto;
+}
+#about-text>h1 {
+    color: rgb(32, 32, 32);
+    padding: 2px 0;
+    border: 2px solid black;
+    margin: 40px;
 }
 #contact {
     padding: 0;
@@ -397,13 +411,17 @@ ul {
     width: auto;
     padding: 10px 20px;
     margin: 0px 10px;
-    background-color: rgba(39, 143, 91, 0.582);
+    background-color: rgba(49, 39, 143, 0.582);
     color: white;
     font-size: 1.5em;
     box-shadow: 0px 0px 3px 3px inset;
+    border: none;
     cursor: pointer;
     -webkit-animation: movePopup 2s;
     animation: movePopup 2s;
+}
+.pop-up-button:hover {
+    background-color: rgb(49, 39, 143);
 }
 
 @keyframes movePopup {
@@ -420,10 +438,11 @@ ul {
     z-index: 8;
     display: none;
     position: fixed;
-    bottom: 1vw;
-    right: 1vw;
-    font-size: 3vh;
+    top: 1vw;
+    left: 1vw;
+    font-size: 20px;
     max-height: 700px;
+    width: 100vw;
 }
 
 .form-container {
@@ -440,7 +459,7 @@ ul {
     margin: 0.6vw 0;
     border-radius: 5px;
     background: gainsboro;
-    font-size: 2vh;
+    font-size: 15px;
 }
 
 button {
@@ -450,13 +469,13 @@ button {
     font-weight: bold;*/
     padding: 1.5vw;
     cursor: pointer;
-    width: 100%;
+    /* width: 100%; */
     height: auto;
 }
 
-.pop-up-button:hover, .form-container .btn:hover {
-    color: white;
-    background-color: rgb(27, 85, 25);
+.form-container .btn:hover {
+    color: black;
+    background-color: silver;
     transition-duration: 0.3s;
     -webkit-transition-duration: 0.3s;
     /* border-color: silver; */
@@ -469,14 +488,14 @@ button {
 }
 
 .form-container .cancel {
-    background-color: rgb(41, 41, 41);
+    background-color: black;
     color: white;
     border-color: gray;
 }
 
 .form-container .cancel:hover {
     color: white;
-    background-color: black;
+    background-color: rgb(41, 41, 41);
     transition-duration: 0.5s;
     -webkit-transition-duration: 0.5s;
     border-color: silver;
@@ -484,30 +503,32 @@ button {
 
 /* LinkedIn and Resume */
 #linkedin-resume {
+    clear: both;
     text-align: center;
     background-color: black;
 }
 .resume {
     width: 200px;
-    margin: 20vh 5px;
-    padding: 5vh;
-    font-size: 3vh;
-    background-color: rgb(127, 155, 167);
+    margin: 10px auto;
+    padding: 20px;
+    font-size: 30px;
+    background-color: rgb(49, 39, 143);
+    font-variant: small-caps;
     border-radius: 10px;
-    border: 2px solid grey;
+    border: 2px solid rgb(128, 128, 128);
     border-bottom: 10px solid grey;
 }
 .resume>a {
-    color:#000000;
+    color: white;
     font-weight: bolder;
     font-family: Roboto;
 }
 
 .linkedin {
     width: 200px;
-    margin: 20vh 5px;
-    padding: 5vh ;
-    font-size: 3vh;
+    margin: 10px auto;
+    padding: 20px ;
+    font-size: 30px;
     color: white;
     background: white;
     border-radius: 10px;
@@ -692,15 +713,15 @@ button {
 
 /*to increase the size of the columns for larger screens */
 @media screen and (min-width: 1725px) {
-    .column-1 {
+    /* .column-1 {
         height: 550px;
     }
     .column-2 {
-        height: 550px;
-    }
-    .repo-container {
-        margin-bottom: 40px;
-    }
+        height: 550px; */
+    /* } */
+    /* .repo-container:last-child {
+        margin-bottom: 80px;
+    } */
 }
 
 @media screen and (min-width: 2000px) {
