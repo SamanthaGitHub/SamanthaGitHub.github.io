@@ -56,6 +56,17 @@ img:hover {
     filter: grayscale(5%);
 }
 
+button {
+    font-family: 'Roboto', sans-serif;
+    /* letter-spacing: 0.3vw; */
+    /* font-size: 1.5vw;
+    font-weight: bold;*/
+    padding: 1.5vw;
+    cursor: pointer;
+    /* width: 100%; */
+    height: auto;
+}
+
 footer {
     color: #525151;
     text-align: center;
@@ -129,7 +140,7 @@ ul {
 .nav-item>a:hover {
     /* background-color: rgb(61, 16, 223);
     color: rgb(250, 235, 215); */
-    /* color:rgb(99, 143, 91); */
+    color:white;
     cursor: pointer;
     transition: 0s ease-in;
 }
@@ -180,9 +191,6 @@ ul {
 
 
 /* Slideshow */
-#slideshow {
-    /* margin: 10px;  */
-}
 
 #slideshow-bg {
     background: rgb(0, 0, 0);
@@ -379,10 +387,11 @@ ul {
     margin: auto;
 }
 #about-text>h1 {
-    color: rgb(32, 32, 32);
+    color: rgb(49, 39, 143);
     padding: 2px 0;
-    border: 2px solid black;
-    margin: 40px;
+    border: 2px solid rgb(49, 39, 143);
+    /* margin: 40px; */
+    font-weight: lighter;
 }
 #contact {
     padding: 0;
@@ -390,10 +399,6 @@ ul {
     background:#000000;
 }
 
-/* .column-tall {
-    padding-top: 1.5%;
-    height: 500px;
-} */
 
 .row:after {
     /* allows footer to be diplayed */
@@ -439,10 +444,10 @@ ul {
     display: none;
     position: fixed;
     top: 1vw;
-    left: 1vw;
+    left: 15vw;
     font-size: 20px;
     max-height: 700px;
-    width: 100vw;
+    width: 70vw;
 }
 
 .form-container {
@@ -462,23 +467,11 @@ ul {
     font-size: 15px;
 }
 
-button {
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 0.3vw;
-    /* font-size: 1.5vw;
-    font-weight: bold;*/
-    padding: 1.5vw;
-    cursor: pointer;
-    /* width: 100%; */
-    height: auto;
-}
-
 .form-container .btn:hover {
     color: black;
     background-color: silver;
     transition-duration: 0.3s;
     -webkit-transition-duration: 0.3s;
-    /* border-color: silver; */
 }
 
 .form-container .btn {
@@ -512,7 +505,9 @@ button {
     margin: 10px auto;
     padding: 20px;
     font-size: 30px;
-    background-color: rgb(49, 39, 143);
+    font-weight: lighter;
+
+    background-color: black;
     font-variant: small-caps;
     border-radius: 10px;
     border: 2px solid rgb(128, 128, 128);
@@ -529,6 +524,8 @@ button {
     margin: 10px auto;
     padding: 20px ;
     font-size: 30px;
+    font-weight: lighter;
+
     color: white;
     background: white;
     border-radius: 10px;
