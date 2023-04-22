@@ -334,7 +334,7 @@ ul {
     float: left;
     height: 40rem;
     width: 40%;
-    padding: 1.6%;
+    padding-top: 5%;
     background: black;
     overflow: hidden;
 }
