@@ -312,7 +312,7 @@ ul {
     font-size: 1.1vw;                   
     font-family: 'Roboto', sans-serif;
     padding: 20px;
-    margin: 20px;
+    margin: 20px auto 5px;
     height: auto;
     width: fit-content;
     color:white;
@@ -342,7 +342,7 @@ ul {
 .column-1 {
     float: left;
     width: 30%;
-    padding: 1.6%;
+    padding: 5%;
     /* height: 100%; */
     background: black;
     height: 40rem;
@@ -364,6 +364,7 @@ ul {
 
 .column-2 {
     float: right;
+    /* top: 20px; */
     width: 30%;
     height: 40rem;
     overflow:hidden;
@@ -375,17 +376,21 @@ ul {
 
 .column-1, .column-2, #repo-container {
     border-top: 3px solid white;
-    padding: 10%;
-    margin: auto;
+    /* padding: 10%; */
+    /* margin: auto; */
     background-color: black;
     color:white;
 }
-#github {
+.github {
     color:white;
     /* margin:0;
     padding:0; */
     border-top: 0px solid white;
     background: #000000;
+}
+
+#github-logo {
+    padding-top: 30vh;
 }
 
 #about {
