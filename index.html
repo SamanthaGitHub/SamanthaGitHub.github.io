@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Samantha Nixon</title>
+        <title>Welcome</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,9 +27,9 @@
             <div class="navbar-container">
                 <ul>
                     <!-- <li class="nav-item"><a href="#home">Home</a></li> -->
-                    <li class="nav-item"><a href="#slideshow">Slideshow</a></li>
-                    <li class="nav-item"><a href="#about">About</a></li>
-                    <li class="nav-item"><a href="#github">GitHub</a></li>
+                    <li class="nav-item"></a></li>
+                    <li class="nav-item"></a></li>
+                    <li class="nav-item"></a></li>
                 </ul>
             </div>
                 
@@ -46,137 +46,10 @@
 
         <!-- Video Text -->
         <div class="video-text">
-            <h1 class="white-text name">Samantha Nixon</h1>
-            <h2 class="white-text" style="padding-left: 20px">Full-Stack Software Developer</h2>
+            <h1 class="white-text name"></h1>
+            <h2 class="white-text" style="padding-left: 20px"></h2>
         </div>
 
-        <!-- Slideshow -->
-        <div id="slideshow">
-            <div id="slideshow-bg">
-                <div id="slideshow-container">
-
-                    <div class="mySlides sh-fade">          
-                        <img class="slideshow-img" src="./media/img/slideshow/me.jpg" alt="Picture of myself">
-                        <div class="text"></div>
-                    </div>
-
-                    <div class="mySlides slide-fade">
-                        <img class="slideshow-image" src="./media/img/slideshow/html-css-js.png" alt="HTML, CSS,and JS logos">
-                        <div class="slideshow-text">I am experienced in:<br> HTML, CSS, JavaScript</div>
-                    </div>
-
-                    <div class="mySlides slide-fade">          
-                        <img class="slideshow-image" src="./media/img/slideshow/python.png" alt="Python">
-                        <div class="slideshow-text">Python and Django Framework</div>
-                    </div>
-
-                    <div class="mySlides slide-fade">          
-                        <img class="slideshow-image" src="./media/img/slideshow/csharp.png" alt="C#">
-                        <div class="slideshow-text">C#, .NET Framework, and MVC</div>
-                    </div>
-
-                    <div class="mySlides slide-fade">
-                        <img class="slideshow-image" src="./media/img/slideshow/sql.jpg" alt="SQL logo">
-                        <div class="slideshow-text">back end development, databases, and SQL</div>
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                </div>
-                <br>
-                <div style="text-align: center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
-                    <span class="dot" onclick="currentSlide(5)"></span>
-                </div>
-            </div>
-        </div>
-
-        <!-- About -->
-        <div id="about">
-            <div id="about-text">
-                <h1 class="center">About</h1>
-                <p >
-                    Formerly a Sous Chef, I am now focused on servers for the web instead of the restaurant. I attended <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s
-                    Software Developer Boot Camp in 2022, where I focused primarily on dynamic website design, Python, and C# after learning foundational computer concepts.
-                    <br>
-                    <br>
-                    I have experience with Agile methodology and developing console and web applications from my internship at Prosper IT Consulting. I developed a 
-                    <a href="https://github.com/SamanthaGitHub/Travel-Guide-Code-Summary" target="_blank">web application</a> with a group of peers using Python 
-                    and the Django Framework, creating CRUD functions, connecting to a RESTful API, web scrapping with Beautiful Soup, and utilizing Azure DevOps for project management. 
-                    Working on both front and back end, we also developed a code-first Entity Framework .NET <a href="https://github.com/SamanthaGitHub/C-Sharp-Live-Project" target="_blank">web application</a> in C#.
-                    <br>
-                    <br>
-                    To get in contact with me, please <a onclick="openForm()" class="contact" style="font: Courier;"><b>click here</b></a>.
-                </p>
-            </div>
-        </div>
-
-        <!-- GitHub -->
-        <div id="github">
-
-            <!-- left column -->
-            <div class="column-1">
-                <h1>GitHub<br>Projects</h1>
-                <h2>Explore my most active repositories here:</h2>
-            </div>
-
-            <!-- middle column -->
-            <div id="repo-container">
-                <div class="repo-container">
-                    <a class="repo" href="https://github.com/SamanthaGitHub/HTML-and-CSS-Projects"><li>HTML & CSS</li></a>
-                    <a class="repo" href="https://github.com/SamanthaGitHub/Javascript-Projects"><li>JavaScript</li></a>
-                    <a class="repo" href="https://github.com/SamanthaGitHub/Python-Projects"><li>Python</li></a>
-                    <a class="repo" href="https://github.com/SamanthaGitHub/CSharp-Projects"><li>C#</li></a>
-                    <a class="repo" href="https://github.com/SamanthaGitHub/R"><li>R</li></a>
-                </div>
-            </div>
-
-            <!-- right column -->
-            <div class="column-2">
-                <!-- GET HIGHER RES GITHUB IMG -->
-                <img style="margin-top: 80%;" src="./media/img/github.png" alt="GitHub logo">
-            </div>
-        </div>
-
-        <!-- Contact -->
-        <div id="contact">
-            <button onclick="openForm()" class="pop-up-button">CONTACT</button>
-            <div class="form-popup" id="myForm">
-                <form action="https://formspree.io/f/mayvlgbz" method="POST" class="form-container">
-                    <h3>Contact Samantha by submitting the form below:</h3>
-                        <label for="name">Name</label>
-                        <input type="text" name="name" placeholder="Name...">
-                        <label for="phone">Phone</label>
-                        <input type="text" name="phone" placeholder="Phone number...">
-                        <label for="email">Email</label>
-                        <input type="text" name="email" placeholder="Email address...">
-                        <label for="message">Message</label>
-                        <input type="text" name="message" placeholder="Message...">
-                    
-                    <button type="submit" class="btn">SUBMIT</button>
-                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
-                </form>
-            </div>
-        </div>
-
-        <!-- LinkedIn & Resume -->
-        <div id="linkedin-resume">
-            <div>
-                <button class="resume" ><a href="/Updated.SamanthaNixon.Resume.pdf" target="_blank">Resume</a></button>
-                <button class="linkedin" ><a href="https://www.linkedin.com/in/samantha-nixon" target="_blank">Linked<span class="in" target="_blank">in</span></a></button>
-            </div>
-        </div>
-
-        <!-- Footer -->
-        <div>
-            <footer>
-                <p class="center">&copy; Samantha Nixon &nbsp;|&nbsp; 2023</p>
-            </footer>
-        </div>
         
     </body>
 <!-- </html> -->
